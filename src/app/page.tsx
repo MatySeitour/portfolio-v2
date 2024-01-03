@@ -1,16 +1,23 @@
-import Image from "next/image";
-import EffectBackground from "./components/EffectBackground";
-import Header from "./components/Header";
 import Banner from "./components/Banner";
+
+import Nav from "./components/Nav";
+import { inter } from "./assets/fonts";
+import About from "./components/About";
+import { useEffect } from "react";
 
 export default function Home() {
   return (
-    <main className="overflow-hidden">
-      <div className="fixed top-0 h-full w-full bg-[#0002]"></div>
-      <span className="banner fixed -translate-x-36 -translate-y-1/4 rotate-[200deg]"></span>
-      {/* <span className="banner__2"></span> */}
-      {/* <Header /> */}
-      <Banner />
+    <main
+      className={`overflow-hidden ${inter.className} flex flex-col items-center justify-center`}
+    >
+      <Nav />
+      <div className="fixed top-0 h-full w-full"></div>
+      <div className="w-full max-w-7xl">
+        <Banner />
+      </div>
+      <About />
+      <div className="h-screen"></div>
+      <div className="cursor"></div>
     </main>
   );
 }
