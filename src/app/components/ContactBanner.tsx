@@ -2,11 +2,27 @@
 
 import { contactItems } from "../utils/contact";
 import ContactItem from "./ContactItem";
+import { motion } from "framer-motion";
 
 export default function ContactBanner() {
+  const contactContainer = {
+    visible: {
+      transition: {
+        ease: [0, 0.71, 0.2, 1.01],
+        staggerChildren: 0.2,
+        duration: 0.5,
+      },
+    },
+  };
+
   return (
     <div className="relative h-auto w-full">
-      <ul className="flex w-full items-center justify-center gap-8">
+      <motion.ul
+        initial="hidden"
+        animate="visible"
+        variants={contactContainer}
+        className="flex w-full items-center justify-start gap-6"
+      >
         {contactItems.map((contactItem) => (
           <ContactItem
             key={contactItem.name}
@@ -15,7 +31,7 @@ export default function ContactBanner() {
             name={contactItem.name}
           />
         ))}
-      </ul>
+      </motion.ul>
     </div>
   );
 }
