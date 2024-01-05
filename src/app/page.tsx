@@ -2,8 +2,9 @@ import Banner from "./components/Banner";
 
 import Nav from "./components/Nav";
 import { inter } from "./assets/fonts";
-import About from "./components/About";
+import Experience from "./components/Experience";
 import { useEffect } from "react";
+import Skills from "./components/Skills";
 
 export default function Home() {
   return (
@@ -15,9 +16,9 @@ export default function Home() {
       <div className="w-full max-w-7xl">
         <Banner />
       </div>
-      <About />
-      <div className="h-screen"></div>
+      <Experience />
       <div className="cursor"></div>
+      <Skills />
     </main>
   );
 }
