@@ -92,9 +92,13 @@ body {
   mask-composite: exclude;
 }
 
-.about-shadow__effect {
+.shadow-effect__30 {
   filter: blur(30px);
   background-image: linear-gradient(#0ff 30%, #02f);
+}
+
+.shadow-effect__10 {
+  filter: blur(10px);
 }
 
 .cursor {
@@ -137,7 +141,7 @@ body {
     from 220deg at 50% 50%,
     #333 0deg,
     #333 176deg,
-    #f848 193deg,
+    #f84f 193deg,
     #333 217deg
   );
 }
@@ -147,11 +151,34 @@ body {
     from 220deg at 50% 50%,
     #333 0deg,
     #333 176deg,
-    #a0f5 193deg,
+    #a0ff 193deg,
     #333 217deg
   );
 }
 
 .scrollbar-none::-webkit-scrollbar {
   width: 0px;
+}
+
+.shadow-planet {
+  box-shadow: -4px 2px 56px #f9c05f;
+}
+
+.bg-edit {
+  background-image: none;
+}
+
+.icon-skill:hover span {
+  animation: expo 2s ease infinite;
+}
+
+@keyframes expo {
+  from {
+    scale: 1;
+    opacity: 1;
+  }
+  to {
+    scale: 2;
+    opacity: 0;
+  }
 }
