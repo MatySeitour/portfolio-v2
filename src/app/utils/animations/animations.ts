@@ -1,20 +1,21 @@
 export const borderEffect = {
   rest: {
     background:
-      "conic-gradient(from 220deg at 50% 50%,#333 0deg,#333 176deg,#999 193deg,#333 217deg)",
+      "conic-gradient(from 170deg at 50% 50%,#333 0deg,#333 176deg,#f02 193deg,#333 217deg)",
     transition: {
-      type: "spring",
-      bounce: 0.4,
       delay: 0,
     },
   },
   hover: {
-    background:
-      "conic-gradient(from 360deg at 50% 50%,#333 0deg,#333 176deg,#999 193deg,#333 217deg)",
+    background: [
+      "conic-gradient(from 170deg at 50% 50%,#333 0deg,#333 176deg,#f02 193deg,#333 217deg)",
+
+      "conic-gradient(from 530deg at 50% 50%,#333 0deg,#333 176deg,#f02 193deg,#333 217deg)",
+    ],
     transition: {
-      type: "spring",
-      bounce: 0.4,
       delay: 0,
+      duration: 4,
+      repeat: Infinity,
     },
   },
 };
