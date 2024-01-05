@@ -38,18 +38,18 @@ export default function About() {
   };
 
   return (
-    <motion.article className="relative flex h-full w-full flex-col px-4 pt-40">
+    <motion.article className="min-g-screen relative flex w-full flex-col px-4 pt-40">
       <div className="fixed top-0 -z-10 h-full w-full bg-[#000a]"></div>
       <motion.div
         className="flex h-auto w-full flex-row justify-between px-4"
         initial="offscreen"
         whileInView="onscreen"
         variants={containerAnimation}
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <div className="relative z-10 flex h-auto w-full flex-col justify-center gap-16">
           <div className="flex items-center justify-center text-center">
-            <div className="relative flex gap-2 rounded-md border-t border-white/40 bg-black px-4 py-2">
+            <div className="relative flex gap-2 rounded-md  px-6 py-4">
               <motion.h3
                 variants={aboutTitle}
                 className="mr-1 inline-block bg-gradient-title bg-clip-text text-6xl font-semibold text-transparent"
@@ -63,23 +63,23 @@ export default function About() {
                 {"  "}
                 my experience
               </motion.p>
-              <div className="border-effect__bottom absolute bottom-0 right-1/2 h-[1.5px] w-full translate-x-1/2"></div>
-              <motion.div
+              {/* <div className="border-effect__bottom absolute bottom-0 right-1/2 h-[1.5px] w-full translate-x-1/2"></div> */}
+              {/* <motion.div
                 variants={appear}
-                className="about-shadow__effect absolute left-0 top-0 -z-10 h-full w-full "
-              ></motion.div>
+                className="shadow-effect__30 absolute left-0 top-0 -z-10 h-full w-full"
+              ></motion.div> */}
             </div>
           </div>
           <motion.div
             initial="offscreen"
             whileInView="onscreen"
             variants={containerAnimation}
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             className="flex h-52 w-auto justify-center gap-4  px-4 py-2"
           >
             <motion.div
               variants={appear}
-              className="relative h-52 w-96 rounded-md bg-black bg-gradient-orange p-4"
+              className="group relative h-52 w-96 rounded-md bg-black bg-gradient-orange p-4"
             >
               <div className="scrollbar-none relative z-20 flex h-full w-full flex-col gap-4 overflow-y-scroll">
                 <p className="bg-gradient-title bg-clip-text text-right text-2xl font-bold text-transparent">
@@ -106,10 +106,11 @@ export default function About() {
               </div>
               <div className="effect-radiant radiant-orange"></div>
               <div className="border-effect__bottom absolute bottom-0 right-1/2 h-[1px] w-full translate-x-1/2"></div>
+              <div className="shadow-effect__10 absolute left-0 top-0 -z-10 h-full w-full bg-gradient-orange-blur opacity-0 transition-all group-hover:opacity-100"></div>
             </motion.div>
             <motion.div
               variants={appear}
-              className="relative h-52 w-96 rounded-md bg-black bg-gradient-blue p-4"
+              className="group relative h-52 w-96 rounded-md bg-black bg-gradient-blue p-4"
             >
               <div className="scrollbar-none relative z-20 flex h-full w-full flex-col gap-4 overflow-y-scroll">
                 <p className="bg-gradient-title bg-clip-text text-right text-2xl font-bold text-transparent">
@@ -134,10 +135,11 @@ export default function About() {
               </div>
               <div className="effect-radiant radiant-blue"></div>
               <div className="border-effect__bottom absolute bottom-0 right-1/2 h-[1px] w-full translate-x-1/2"></div>
+              <div className="shadow-effect__10 absolute left-0 top-0 -z-10 h-full w-full bg-gradient-blue-blur opacity-0 transition-all group-hover:opacity-100"></div>
             </motion.div>
             <motion.div
               variants={appear}
-              className="relative h-52 w-96 rounded-md bg-black bg-gradient-purple p-4"
+              className="group relative h-52 w-96 rounded-md bg-black bg-gradient-purple p-4"
             >
               <div className="scrollbar-none relative z-20 flex h-full w-full flex-col gap-4 overflow-y-scroll">
                 <p className="bg-gradient-title bg-clip-text text-right text-2xl font-bold text-transparent">
@@ -162,6 +164,7 @@ export default function About() {
               </div>
               <div className="effect-radiant radiant-purple"></div>
               <div className="border-effect__bottom absolute bottom-0 right-1/2 h-[1px] w-full translate-x-1/2"></div>
+              <div className="shadow-effect__10 absolute left-0 top-0 -z-10 h-full w-full bg-gradient-purple-blur opacity-0 transition-all group-hover:opacity-100"></div>
             </motion.div>
           </motion.div>
         </div>
