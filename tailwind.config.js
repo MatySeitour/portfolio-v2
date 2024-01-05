@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+        "gradient-to-45": "linear-gradient(45deg, var(--tw-gradient-stops), transparent)",
         "gradient-title": "linear-gradient(to bottom, #ddd 30%, #fff 60%, #444);",
         "gradient-nav": "linear-gradient(45deg, #222, transparent);",
         "gradient-blue": "linear-gradient(0deg, #02f5 , transparent, transparent);",
@@ -17,7 +18,14 @@ module.exports = {
         "gradient-purple-blur": "linear-gradient(#a0f8 30%, #a0f5);",
         "gradient-blue-blur": "linear-gradient(#02f8 30%, #02f5);"
       },
-
+      colors: {
+        "html": "#f846",
+        "css": "#00a7ff",
+        "javascript": "#ff06",
+        "react": "#09ff",
+        "typescript": "#07fa",
+        "next": "#555"
+      }
     },
   },
   plugins: [],
