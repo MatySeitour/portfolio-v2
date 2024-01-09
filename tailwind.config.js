@@ -24,6 +24,7 @@ module.exports = {
         "pulseHover": "pulseHover 1.5s ease infinite"
       },
       backgroundImage: {
+        "argentina": "linear-gradient(to top, #0ff, #fff, #0ff)",
         "gradient-to-45": "linear-gradient(45deg, var(--tw-gradient-stops), transparent)",
         "gradient-title": "linear-gradient(to bottom, #ddd 30%, #fff 60%, #444);",
         "gradient-nav": "linear-gradient(45deg, #222, transparent);",
