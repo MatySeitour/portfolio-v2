@@ -7,6 +7,22 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        pulseHover: {
+          "0%": {
+            boxShadow: "0 0 0 0 var(--shadow-color)",
+          },
+          "70%": {
+            boxShadow: "0 0 0 20px rgba(255, 82, 82, 0)",
+          },
+          "100%": {
+            boxShadow: "0 0 0 20px rgba(255, 82, 82, 0)",
+          }
+        }
+      },
+      animation: {
+        "pulseHover": "pulseHover 1.5s ease infinite"
+      },
       backgroundImage: {
         "gradient-to-45": "linear-gradient(45deg, var(--tw-gradient-stops), transparent)",
         "gradient-title": "linear-gradient(to bottom, #ddd 30%, #fff 60%, #444);",
@@ -24,7 +40,13 @@ module.exports = {
         "javascript": "#ff06",
         "react": "#09ff",
         "typescript": "#07fa",
-        "next": "#555"
+        "next": "#555",
+        "node": "#0a7a",
+        "express": "#777a",
+        "postgresql": "#0cfa",
+        "docker": "#0afa",
+        "golang": "#0cfa",
+
       }
     },
   },
