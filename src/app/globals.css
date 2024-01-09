@@ -168,17 +168,6 @@ body {
   background-image: none;
 }
 
-.icon-skill:hover span {
-  animation: expo 2s ease infinite;
-}
-
-@keyframes expo {
-  from {
-    scale: 1;
-    opacity: 1;
-  }
-  to {
-    scale: 2;
-    opacity: 0;
-  }
+.text-banner {
+  text-wrap: balance;
 }
