@@ -1,17 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaDocker } from "react-icons/fa";
-import { FaGolang } from "react-icons/fa6";
-import { TbBrandNextjs } from "react-icons/tb";
-import { BiLogoTypescript } from "react-icons/bi";
-import { GrMysql } from "react-icons/gr";
-import { SiExpress } from "react-icons/si";
-import { DiPostgresql } from "react-icons/di";
 import FirstRing from "./FirstRing";
 import SecondRing from "./SecondRing";
-import IluminationEffect from "./IluminationEffect";
-import ThirdRing from "./ThirdRing";
 
 {
   /* <div className="shadow-effect__30 absolute left-0 top-0 -z-10 h-full w-full "></div> */
@@ -71,7 +61,6 @@ export default function Skills() {
             ></motion.div>
           </div> */}
           <SecondRing />
-          <ThirdRing />
           {/* <div className="absolute left-1/2 top-1/2 z-10 h-80 w-96 -translate-x-1/2 -translate-y-1/2 rounded-[50%] border border-white/20">
             <div className="absolute left-6 top-5 z-10 flex h-16 w-16 flex-col items-center justify-center rounded-[50%]">
               <div className="relative h-12 w-12 rounded-[50%] bg-black bg-gradient-nav p-[10px]">
