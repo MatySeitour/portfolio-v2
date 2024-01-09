@@ -52,7 +52,7 @@ export default function TechnologyItem({
       <div
         // whileHover="hover"
         // animate="rest"
-        className={`icon-skill bg-gradient-to-45 ${gradientColor} relative h-14 w-14 rounded-[50%] bg-black p-[10px]`}
+        className={`bg-gradient-to-45 hover:animate-skill__${name} ${gradientColor} relative h-14 w-14 rounded-[50%] bg-black p-[10px]`}
       >
         {/* <IconComponent className={`h-full w-full ${colorIcon}`}></IconComponent> */}
         <Image
@@ -63,12 +63,8 @@ export default function TechnologyItem({
           height={400}
         />
         <div className="effect-radiant radiant-gray !pb-[0px] !pl-[0px]"></div>
-        <span
-          // variants={hoverScale}
-          className="absolute left-0 top-0 -z-10 h-full w-full rounded-[50%] bg-[#f846]"
-        ></span>
       </div>
-      <div className="radial-effect__bg absolute left-0 top-0 -z-10 h-full w-full"></div>
+      <div className="absolute left-0 top-0 -z-10 h-full w-full"></div>
       <p className="text-white">{name}</p>
     </div>
   );
