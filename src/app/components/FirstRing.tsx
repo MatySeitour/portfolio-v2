@@ -7,17 +7,17 @@ import { borderEffect } from "../utils/animations/animations";
 
 export default function FirstRing() {
   return (
-    <div className="absolute left-1/2 top-1/2 z-50 h-40 w-56 -translate-x-1/2 -translate-y-1/2 rounded-[50%]">
+    <div className="absolute left-1/2 top-1/2 z-50 h-52 w-72 -translate-x-1/2 -translate-y-1/2 rounded-[50%]">
       <TechnologyItem
         gradientColor="from-html"
         name="html"
-        className="-left-6 top-1/2"
+        className="-left-2 bottom-0"
         svgImage={"html.svg"}
       />
       <TechnologyItem
         name="css"
         gradientColor="from-css"
-        className="-right-4 top-1/2"
+        className="-right-2 bottom-0"
         svgImage={"css.svg"}
       />
       <TechnologyItem
@@ -26,12 +26,29 @@ export default function FirstRing() {
         className="left-1/2 top-0 -translate-x-1/2 -translate-y-1/2"
         svgImage={"js.svg"}
       />
-      {/* <TechnologyItem
-        colorIcon="ffa"
-        name=""
-        className="left-1/2 top-1/2 -translate-x-1/2 -translate-y-6"
-        svgImage={FaJs}
-      /> */}
+
+      <TechnologyItem
+        gradientColor="from-react"
+        svgImage={"react.svg"}
+        className="left-1 top-4"
+        name="react"
+      />
+      <TechnologyItem
+        gradientColor="from-typescript"
+        svgImage={"typescript.svg"}
+        className="-bottom-10 right-1/2 translate-x-1/2"
+        name="typescript"
+      />
+      <TechnologyItem
+        gradientColor="from-next"
+        svgImage={"nextjs.svg"}
+        className="right-1 top-4"
+        name="nextjs"
+      />
+
+      <p className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-title bg-clip-text text-2xl font-bold text-transparent">
+        Frontend
+      </p>
       <motion.div
         initial={borderEffect.rest}
         animate={borderEffect.hover}
