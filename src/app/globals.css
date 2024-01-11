@@ -44,8 +44,6 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-/* banner absolute top-0 h-40 w-screen bg-home bg-[length:40px_40px] */
-
 .border-effect__top {
   background: linear-gradient(
     90deg,
@@ -98,7 +96,7 @@ body {
 }
 
 .shadow-effect__10 {
-  filter: blur(10px);
+  filter: blur(15px);
 }
 
 .cursor {
@@ -136,6 +134,22 @@ body {
   );
 }
 
+.border-effect__divider {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #111 25%,
+    #a0ff 50%,
+    #111 75%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.radiant-divider {
+  background: linear-gradient(180deg, #a0ff 50%, #00a7ff);
+  filter: blur(50px);
+}
+
 .radiant-orange {
   background: conic-gradient(
     from 220deg at 50% 50%,
@@ -143,6 +157,22 @@ body {
     #333 176deg,
     #f84f 193deg,
     #333 217deg
+  );
+}
+.radiant-projects {
+  background: conic-gradient(
+    from 220deg at 50% 50%,
+    #333 30deg,
+    #111f 49deg,
+    #111f 70deg,
+    #333 80deg,
+    #333 150deg,
+    #a0f7 163deg,
+    #a0ff 173deg,
+    #a0f7 193deg,
+    #111f 200deg,
+    #111f 230deg,
+    #333 269deg
   );
 }
 
@@ -158,14 +188,6 @@ body {
 
 .scrollbar-none::-webkit-scrollbar {
   width: 0px;
-}
-
-.shadow-planet {
-  box-shadow: -4px 2px 56px #f9c05f;
-}
-
-.bg-edit {
-  background-image: none;
 }
 
 .text-banner {
