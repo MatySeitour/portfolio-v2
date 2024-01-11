@@ -1,20 +1,16 @@
 export const borderEffect = {
   rest: {
     background:
-      "conic-gradient(from 170deg at 50% 50%,#333 0deg,#333 176deg,#f02 193deg,#333 217deg)",
-    transition: {
-      delay: 0,
-    },
+      "conic-gradient(from 170deg at 50% 50%,#333 0deg,#333 176deg,#a0f 193deg,#acf 216deg,#333 217deg)",
+    transition: {},
   },
   hover: {
     background: [
-      "conic-gradient(from 170deg at 50% 50%,#333 0deg,#333 176deg,#f02 193deg,#333 217deg)",
-
-      "conic-gradient(from 530deg at 50% 50%,#333 0deg,#333 176deg,#f02 193deg,#333 217deg)",
+      "conic-gradient(from 170deg at 50% 50%,#333 0deg,#333 176deg,#0af 193deg,#acf 216deg,#333 217deg)",
+      "conic-gradient(from 500deg at 50% 50%,#333 0deg,#333 176deg,#a0f 193deg,#acf 216deg,#333 217deg)",
     ],
     transition: {
-      delay: 0,
-      duration: 4,
+      duration: 2,
       repeat: Infinity,
     },
   },
@@ -28,6 +24,15 @@ export const appear = {
   },
   onscreen: {
     opacity: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
+export const containerObserverAnimation = {
+  offscreen: {},
+  onscreen: {
     transition: {
       duration: 0.5,
     },
