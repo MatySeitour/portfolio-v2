@@ -15,10 +15,4 @@ export const contactItems = [
     // color: "#00a",
     image: FaLinkedin,
   },
-  {
-    name: "Gmail",
-    link: "https://www.linkedin.com/in/matias-seitour-1a0118240/",
-    // color: "#a99",
-    image: SiGmail,
-  },
 ];
