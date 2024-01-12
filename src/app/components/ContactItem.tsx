@@ -31,7 +31,7 @@ export default function ContactItem(contactProps: ContactType) {
           },
         }}
         // animate="rest"
-        className="relative flex min-w-[5rem] cursor-pointer justify-center rounded-2xl bg-gradient-nav px-4 py-2 transition-all before:p-[0.6px]"
+        className="relative flex min-w-[5rem] cursor-pointer justify-center rounded-2xl bg-black bg-gradient-nav px-4 py-2 transition-all before:p-[0.6px]"
       >
         <contactProps.image className="h-8 w-8 text-white"></contactProps.image>
         <motion.div
