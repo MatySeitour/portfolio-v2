@@ -12,7 +12,7 @@ export default function Divider() {
       initial="offscreen"
       whileInView="onscreen"
       variants={containerObserverAnimation}
-      viewport={{ once: true, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.9 }}
       className="relative h-40 pt-20"
     >
       <motion.div
