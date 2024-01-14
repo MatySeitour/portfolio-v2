@@ -1,35 +1,40 @@
-import { Project } from "../types/contact";
+import { Project } from "../types/types";
 
 export const projects: Project[] = [
   {
     projectName: "Que me están cobrando",
-    projectDescription: "lalal ad s ome sdalkelk dasd",
-    technologies: [
-      "nextjs",
-      "typescript",
-      "prisma",
-      "puppeteer",
-      "gsap",
-      "react",
-    ],
+    projectDescription:
+      "You can navigate through various digital services in Argentina to find out their final price along with the taxes that are charged to you.",
+    technologies: ["nextjs", "typescript", "prisma", "gsap", "react"],
     imageSrc: "que-me-cobran.webp",
-    demoLink: "/",
-    githubLink: "/",
+    demoLink: "https://que-me-estan-cobrando-v2.vercel.app/",
+    githubLink: "https://github.com/MatySeitour/que-me-estan-cobrando",
+  },
+  {
+    projectName: "Que me están cobrando (backend)",
+    projectDescription:
+      "You can navigate through various digital services in Argentina to find out their final price along with the taxes that are charged to you.",
+    technologies: ["puppeteer", "prisma", "docker", "node"],
+    imageSrc: "que-me-cobran.webp",
+    demoLink: "https://que-me-estan-cobrando-v2.vercel.app/",
+    githubLink: "https://github.com/MatySeitour/que-me-estan-cobrando",
   },
   {
     projectName: "Resident evil games",
-    projectDescription: "lalal ad s ome sdalkelk dasd",
-    technologies: ["nextjs", "typescript", "puppeteer", "gsap", "react"],
+    projectDescription:
+      "This is a landing page about some resident evil games.",
+    technologies: ["nextjs", "typescript", "gsap", "react"],
     imageSrc: "resident-evil.webp",
-    demoLink: "/",
-    githubLink: "/",
+    demoLink: "https://resident-evil-games.vercel.app/",
+    githubLink: "https://github.com/MatySeitour/resident-evil-games",
   },
   {
     projectName: "Books store",
-    projectDescription: "lalal ad s ome sdalkelk dasd",
+    projectDescription:
+      "Midudev technical test with the aim of testing my skills in managing user interactions, state management, data filtering and code structuring.",
     technologies: ["nextjs", "gsap", "react"],
     imageSrc: "books-store.webp",
-    demoLink: "/",
-    githubLink: "/",
+    demoLink: "https://01-reading-list-gray.vercel.app/",
+    githubLink: "https://github.com/MatySeitour/01-reading-list",
   },
 ];
