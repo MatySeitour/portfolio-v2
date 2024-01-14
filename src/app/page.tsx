@@ -22,9 +22,9 @@ export default function Home() {
         <Divider />
         <Experience />
         <Divider />
-        <Skills />
-        <Divider />
         <Projects />
+        <Divider />
+        <Skills />
       </div>
       <div className="cursor"></div>
     </main>
