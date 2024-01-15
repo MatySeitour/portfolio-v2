@@ -3,8 +3,7 @@ import { Project } from "../types/types";
 export const projects: Project[] = [
   {
     projectName: "Que me están cobrando",
-    projectDescription:
-      "You can navigate through various digital services in Argentina to find out their final price along with the taxes that are charged to you.",
+    projectDescription: "Know the price of digital services in Argentina.",
     technologies: ["nextjs", "typescript", "prisma", "gsap", "react"],
     imageSrc: "que-me-cobran.webp",
     demoLink: "https://que-me-estan-cobrando-v2.vercel.app/",
@@ -12,8 +11,7 @@ export const projects: Project[] = [
   },
   {
     projectName: "Que me están cobrando (backend)",
-    projectDescription:
-      "You can navigate through various digital services in Argentina to find out their final price along with the taxes that are charged to you.",
+    projectDescription: "Know the price of digital services in Argentina.",
     technologies: ["puppeteer", "prisma", "docker", "node"],
     imageSrc: "que-me-cobran.webp",
     demoLink: "https://que-me-estan-cobrando-v2.vercel.app/",
