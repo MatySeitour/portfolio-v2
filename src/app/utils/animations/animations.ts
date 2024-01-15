@@ -15,8 +15,21 @@ export const borderEffect = {
     },
   },
 };
+export const projectAnimationContainer = {
+  offscreen: {
+    backgroundImage: "linear-gradient(0deg, #2220, #2220, #2220,#0000, #0000)",
+    transition: {},
+  },
+  onscreen: {
+    backgroundImage: "linear-gradient(0deg, #222e, #222e,#222a, #000d, #000d)",
+    transition: {
+      duration: 0.2,
+    },
+  },
+};
 
-export const bgContactGitHub = "linear-gradient(45deg, #444, transparent)";
+export const backgroundContactAnimation =
+  "linear-gradient(45deg, #444, transparent)";
 
 export const appear = {
   offscreen: {
@@ -34,6 +47,64 @@ export const containerObserverAnimation = {
   offscreen: {},
   onscreen: {
     transition: {
+      duration: 0.5,
+    },
+  },
+};
+
+export const bannerContainerAnimation = {
+  visible: {
+    transition: {
+      ease: [0, 0.71, 0.2, 1.01],
+      staggerChildren: 0.2,
+      duration: 0.5,
+    },
+  },
+};
+
+export const contactContainer = {
+  visible: {
+    transition: {
+      ease: [0, 0.71, 0.2, 1.01],
+      staggerChildren: 0.2,
+      duration: 0.5,
+    },
+  },
+};
+
+export const contactItemsAnimation = {
+  hidden: { opacity: 0, translateX: -50 },
+  visible: {
+    translateX: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.5,
+    },
+  },
+};
+
+export const titleBannerAnimation = {
+  hidden: { opacity: 0, translateY: -50 },
+  visible: {
+    translateY: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.5,
+    },
+  },
+};
+export const subtitleBannerAnimation = {
+  hidden: { opacity: 0, translateY: 50 },
+  visible: {
+    translateY: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
       duration: 0.5,
     },
   },
