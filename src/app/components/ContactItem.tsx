@@ -1,44 +1,42 @@
 "use client";
 
-import { ContactType } from "../types/contact";
+// components ----------------
 import { motion } from "framer-motion";
-import { bgContactGitHub, borderEffect } from "../utils/animations/animations";
 
-export default function ContactItem(contactProps: ContactType) {
-  const navItems = {
-    hidden: { opacity: 0, translateX: -50 },
-    visible: {
-      translateX: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.4,
-        duration: 0.5,
-      },
-    },
-  };
+// types ----------------
+import { Contact } from "../types/types";
+
+// animations ----------------
+import {
+  backgroundContactAnimation,
+  borderEffect,
+  contactItemsAnimation,
+} from "../utils/animations/animations";
+
+export default function ContactItem(contactProps: Contact) {
   return (
-    <motion.li variants={navItems} key={contactProps.name}>
-      <motion.div
+    <motion.li variants={contactItemsAnimation} key={contactProps.name}>
+      <motion.a
+        target="_blank"
+        href={contactProps.link}
         initial={{
           backgroundImage: "linear-gradient(45deg, #222,  transparent)",
         }}
         whileHover={{
-          backgroundImage: bgContactGitHub,
+          backgroundImage: backgroundContactAnimation,
           transition: {
             duration: 0.5,
             type: "spring",
           },
         }}
-        // animate="rest"
-        className="relative flex min-w-[5rem] cursor-pointer justify-center rounded-2xl bg-black bg-gradient-nav px-4 py-2 transition-all before:p-[0.6px]"
+        className="relative flex min-w-[5rem] cursor-pointer justify-center rounded-2xl bg-black bg-gradient-button px-4 py-2 transition-all before:p-[0.6px]"
       >
         <contactProps.image className="h-8 w-8 text-white"></contactProps.image>
         <motion.div
           variants={borderEffect}
           className="effect-radiant radiant-gray"
         ></motion.div>
-      </motion.div>
+      </motion.a>
     </motion.li>
   );
 }
