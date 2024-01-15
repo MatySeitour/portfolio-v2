@@ -1,20 +1,16 @@
 "use client";
 
-import { contactItems } from "../utils/contact";
+// components ----------------
 import ContactItem from "./ContactItem";
 import { motion } from "framer-motion";
 
-export default function ContactBanner() {
-  const contactContainer = {
-    visible: {
-      transition: {
-        ease: [0, 0.71, 0.2, 1.01],
-        staggerChildren: 0.2,
-        duration: 0.5,
-      },
-    },
-  };
+// contact items data ----------------
+import { contactItems } from "../utils/contact";
 
+// animations ----------------
+import { contactContainer } from "../utils/animations/animations";
+
+export default function ContactBanner() {
   return (
     <div className="relative h-auto w-full">
       <motion.ul
