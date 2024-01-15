@@ -5,24 +5,24 @@ import { inter } from "../assets/fonts";
 
 export default function Nav() {
   return (
-    <motion.nav className="fixed top-0 z-50 h-14 w-full">
-      <ul
-        className={`flex h-full w-full justify-center gap-4 px-4 py-1 ${inter.className} bg-[#000a] py-2`}
-      >
-        <li className="flex cursor-pointer items-center rounded-full border border-white/10 bg-gradient-nav px-4 text-white/70 transition-all hover:text-white">
-          Home
-        </li>
-        <li className="flex cursor-pointer items-center rounded-full border  border-white/10 bg-gradient-nav px-4 text-white/70 transition-all hover:text-white">
-          About
-        </li>
-        <li className="flex cursor-pointer items-center rounded-full border  border-white/10 bg-gradient-nav px-4 text-white/70 transition-all hover:text-white">
-          Experience
-        </li>
-        <li className="flex cursor-pointer items-center rounded-full border  border-white/10 bg-gradient-nav px-4 text-white/70 transition-all hover:text-white">
-          Skills
-        </li>
-      </ul>
-      <div className="border-effect__bottom absolute bottom-0 right-1/2 h-[1px] w-full translate-x-1/2"></div>
+    <motion.nav className="fixed top-4 z-50 h-14 w-full">
+      <div className={`flex h-full w-auto justify-center ${inter.className}`}>
+        <ul className="bg-gradient-project relative flex gap-4 rounded-full bg-[#000a] px-2 py-1 backdrop-blur-sm">
+          <li className="relative z-10 flex cursor-pointer items-center rounded-full px-3 text-white/70 transition-all hover:text-white">
+            Home
+          </li>
+          <li className="relative z-10 flex cursor-pointer items-center rounded-full px-3 text-white/70 transition-all hover:text-white">
+            About
+          </li>
+          <li className="relative z-10 flex cursor-pointer items-center rounded-full px-3 text-white/70 transition-all hover:text-white">
+            Experience
+          </li>
+          <li className="relative z-10 flex cursor-pointer items-center rounded-full px-3 text-white/70 transition-all hover:text-white">
+            Skills
+          </li>
+          <motion.div className="effect-radiant radiant-gray"></motion.div>
+        </ul>
+      </div>
     </motion.nav>
   );
 }
