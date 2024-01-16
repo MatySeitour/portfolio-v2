@@ -23,11 +23,8 @@
 }
 
 body {
-  background-color: #fff;
-  opacity: 0.8;
-  background-image: linear-gradient(#111 1px, transparent 1px),
-    linear-gradient(to right, #111 1px, #000000 1px);
-  background-size: 50px 50px;
+  background-color: #000;
+
   overflow-x: hidden;
 }
 
@@ -73,7 +70,7 @@ body {
 }
 
 .banner {
-  background: linear-gradient(180deg, #0af6, #02f6);
+  background: linear-gradient(180deg, #a0f7, #a0f7, #a0f7, #a0f6);
   filter: blur(100px);
 }
 
@@ -159,20 +156,36 @@ body {
     #333 217deg
   );
 }
+
+.radiant-example {
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    transparent 117deg,
+    #f84f 200deg,
+    #333 217deg,
+    transparent
+  );
+}
+
 .radiant-projects {
   background: conic-gradient(
     from 220deg at 50% 50%,
-    #333 30deg,
-    #111f 49deg,
-    #111f 70deg,
-    #333 80deg,
-    #333 150deg,
-    #a0f7 163deg,
-    #a0ff 173deg,
-    #a0f7 193deg,
-    #111f 200deg,
-    #111f 230deg,
-    #333 269deg
+    #222 0deg,
+    #333a 30deg,
+    #555a 49deg,
+    #777a 70deg,
+    #999a 80deg,
+    #999a 170deg,
+    #a0f7 173deg,
+    #a0fa 183deg,
+    #a0ff 193deg,
+    #fffa 199deg,
+    #999a 200deg,
+    #999a 210deg,
+    #777a 229deg,
+    #555a 239deg,
+    #222 249deg,
+    #333a 259deg
   );
 }
 
@@ -192,4 +205,84 @@ body {
 
 .text-banner {
   text-wrap: balance;
+}
+
+.lines-left {
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% + 1px);
+  height: calc(100% + 1px);
+  padding: 0 0px 1px 1px;
+  border-radius: inherit;
+}
+
+.lines-right {
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% + 1px);
+  height: calc(100% + 1px);
+  padding: 1px 1px 0px 0px;
+  border-radius: inherit;
+}
+
+.radiant-lines__left {
+  background: conic-gradient(
+    #fff,
+    #a0f 3%,
+    #a0f 6%,
+    #a0f7 10%,
+    transparent 14.9%
+  );
+  animation: rotateRight 3s ease infinite reverse;
+}
+
+.radiant-lines__right {
+  background: conic-gradient(
+    from 220deg,
+    transparent,
+    #a0f7 3%,
+    #a0f 6%,
+    #a0f 10%,
+    #fff 14.9%,
+    transparent 17.9%
+  );
+  animation: rotateLeft 3s ease infinite;
+}
+
+@keyframes rotateRight {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateLeft {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
