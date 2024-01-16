@@ -1,6 +1,4 @@
-import { FaReact } from "react-icons/fa";
-import { TbBrandNextjs } from "react-icons/tb";
-import { BiLogoTypescript } from "react-icons/bi";
+import { motion } from "framer-motion";
 
 import TechnologyItem from "./TechnologyItem";
 
@@ -42,6 +40,12 @@ export default function SecondRing() {
         svgImage={"docker.svg"}
         className="-bottom-10 right-12 -translate-x-1/2 -translate-y-1/2 "
         name="docker"
+      />
+      <TechnologyItem
+        gradientColor="from-prisma"
+        svgImage={"prisma.svg"}
+        className="-bottom-[92px] right-1/2 -translate-y-1/2 translate-x-1/2 "
+        name="prisma"
       />
       <div className="absolute left-1/2 top-10 -translate-x-1/2 -translate-y-1/2 bg-gradient-title bg-clip-text text-2xl font-bold text-transparent">
         Backend
