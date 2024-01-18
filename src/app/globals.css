@@ -290,5 +290,18 @@ body {
   }
 }
 
-.effect-scroll__top {
+.scrollGradient {
+  background:
+    linear-gradient(#000 33%, rgba(255, 46, 46, 0)),
+    linear-gradient(transparent, #000 66%) 0 100%,
+    linear-gradient(180deg, rgb(30, 30, 30), rgba(0, 0, 0)),
+    linear-gradient(rgba(0, 0, 0), rgb(30, 30, 30)) 0 100%;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-attachment: local, local, scroll, scroll;
+  background-size:
+    100% 0px,
+    100% 0px,
+    100% 27px,
+    100% 19px;
 }
