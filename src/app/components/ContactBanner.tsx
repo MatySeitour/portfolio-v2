@@ -17,7 +17,7 @@ export default function ContactBanner() {
         initial="hidden"
         animate="visible"
         variants={contactContainer}
-        className="flex w-full items-center justify-start gap-6"
+        className="flex w-full items-center justify-center gap-6 md:justify-start"
       >
         {contactItems.map((contactItem) => (
           <ContactItem
