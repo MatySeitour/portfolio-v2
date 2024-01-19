@@ -27,21 +27,24 @@ export default function Banner() {
   const [copyEmailState, setCopyEmailState] = useState(false);
 
   useEffect(() => {
-    const cursor = document.querySelector(".cursor");
-    document.addEventListener("mousemove", function (e: any) {
-      const posX = e.clientX;
-      const posY = e.clientY;
-      cursor?.animate(
-        {
-          left: `${posX}px`,
-          top: `${posY}px`,
-        },
-        {
-          duration: 500,
-          fill: "forwards",
-        },
-      );
-    });
+    console.log(window.innerWidth);
+    if (window.innerWidth > 768) {
+      const cursor = document.querySelector(".cursor");
+      document.addEventListener("mousemove", function (e: any) {
+        const posX = e.clientX;
+        const posY = e.clientY;
+        cursor?.animate(
+          {
+            left: `${posX}px`,
+            top: `${posY}px`,
+          },
+          {
+            duration: 500,
+            fill: "forwards",
+          },
+        );
+      });
+    }
   }, []);
 
   const handleClick = () => {
@@ -94,10 +97,10 @@ export default function Banner() {
         <ContactBanner />
         <motion.div
           variants={subtitleBannerAnimation}
-          className="flex max-w-xs items-center gap-4"
+          className="flex flex-col items-center gap-4 md:flex-row"
         >
-          <div className="relative rounded-lg bg-gradient-project px-4 py-2 text-white">
-            <p className="bg-re">matias.seitour01@gmail.com</p>
+          <div className="relative hidden rounded-lg bg-gradient-project px-4 py-2 text-white md:inline-block">
+            <p className="">matias.seitour01@gmail.com</p>
             <div className="border-effect__bottom absolute bottom-[0px] right-1/2 h-[2px] w-full translate-x-1/2"></div>
             <div className="effect-radiant radiant-gray"></div>
           </div>
@@ -106,13 +109,20 @@ export default function Banner() {
             className="relative z-30 cursor-pointer rounded-lg bg-gradient-button px-4 py-[8.5px] text-white"
           >
             <FaCopy
-              className={`absolute z-10 h-6 w-6 ${
+              className={`absolute z-10 hidden h-6 w-6 md:inline-block ${
                 copyEmailState ? `opacity-0` : `opacity-100`
               } transition-all`}
             />
+            <p
+              className={`inline-block md:hidden ${
+                copyEmailState ? `opacity-0` : `opacity-100`
+              } transition-all`}
+            >
+              Copy email
+            </p>
             <FaCheck
               onClick={handleClick}
-              className={`relative z-10 h-6 w-6 ${
+              className={`absolute left-1/2 top-1/2 z-10 h-6 w-6 -translate-x-1/2 -translate-y-1/2 md:relative md:left-0 md:translate-x-0 md:translate-y-0 ${
                 !copyEmailState ? `opacity-0` : `opacity-100`
               } text-green-600 transition-all`}
             />
