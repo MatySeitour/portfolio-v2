@@ -77,8 +77,8 @@ export default function Experience() {
             </div>
           </div>
           <div className="flex min-h-[24rem] w-auto justify-center ">
-            <div className="flex h-full w-full justify-center">
-              <div className="relative z-20 flex h-full min-w-[24rem] max-w-lg flex-1 flex-col justify-between overflow-hidden rounded-lg  px-2 py-4">
+            <div className="relative grid h-full w-full grid-cols-10">
+              <div className="relative z-20 col-start-1 col-end-6 grid h-full overflow-hidden rounded-lg bg-[#111c] px-2 py-4">
                 <IluminationEffect className="absolute right-0 top-0 h-32 w-32 !bg-gradient-to-r !from-transparent !to-white" />
 
                 <h4 className="flex items-center gap-2 px-2 text-2xl text-white">
@@ -106,25 +106,15 @@ export default function Experience() {
 
                 <motion.div className="effect-radiant radiant-gray -z-0 !pb-[0.5px]"></motion.div>
               </div>
-              <motion.div
-                initial={{
-                  backgroundImage:
-                    "conic-gradient(from 0deg at 50% 50%,#333 0deg,#333 190deg,#fff 191deg,#a0f 193deg,#333 217deg)",
-                }}
-                animate={{
-                  backgroundImage: [
-                    "conic-gradient(from 0deg at 50% 50%,#333 0deg,#333 190deg,#fff 191deg,#a0f 193deg,#333 217deg)",
-                    "conic-gradient(from -280deg at 50% 50%,#333 0deg,#333 190deg,#fff 191deg,#a0f 193deg,#333 217deg)",
-                  ],
-                  transition: {
-                    duration: 5,
-                    repeat: Infinity,
-                  },
-                }}
-                className="effect-radiant !relative -z-0 w-12 translate-y-28 !pb-[0.5px] !pl-[0] !pr-[0]"
-              ></motion.div>
+              <div className="relative col-start-6 col-end-7">
+                <div className="absolute -left-0 top-20 z-20 h-[98px] w-full border-t border-white/5">
+                  <div className="lines-right bg-gradient-to-t from-transparent to-white/20">
+                    <div className="radiant-lines__right absolute -left-32 -top-32 h-96 w-96"></div>
+                  </div>
+                </div>
+              </div>
 
-              <div className=" relative z-20 flex h-52 w-96 flex-col overflow-hidden rounded-lg bg-black px-2 py-4">
+              <div className=" relative z-20 col-start-7 col-end-11 grid h-52 w-auto overflow-hidden rounded-lg bg-[#111c] px-2 py-4">
                 <IluminationEffect className="absolute right-0 top-0 h-28 w-28 !bg-gradient-to-r !from-transparent !to-white" />
 
                 <h4 className="flex items-center gap-2 px-2 text-2xl text-white">
@@ -147,6 +137,10 @@ export default function Experience() {
                 <div className="shadow-effect__10 absolute -bottom-20 right-1/2 z-0 h-20 w-32 translate-x-1/2 bg-gray-400/30"></div>
                 <motion.div className="effect-radiant radiant-gray -z-0 !pb-[0.5px]"></motion.div>
               </div>
+              <div className="absolute -bottom-10 h-20 w-2">
+                <div className="effect-radiant radiant-purple bottom-0 -z-0 h-20 w-2 translate-y-1/2 !pr-[0] !pt-[0]"></div>
+              </div>
+              {/* <div className="absolute bottom-0 right-0 h-48 w-full bg-red-300"></div> */}
             </div>
           </div>
         </div>
