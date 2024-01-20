@@ -3,7 +3,8 @@ import { Project } from "../types/types";
 export const projects: Project[] = [
   {
     projectName: "Que me están cobrando",
-    projectDescription: "Know the price of digital services in Argentina.",
+    projectDescription:
+      "Know the prices of the most used digital services in Argentina along with their taxes.",
     technologies: ["nextjs", "typescript", "prisma", "gsap", "react"],
     imageSrc: "que-me-cobran.webp",
     demoLink: "https://que-me-estan-cobrando-v2.vercel.app/",
@@ -11,7 +12,8 @@ export const projects: Project[] = [
   },
   {
     projectName: "Que me están cobrando (backend)",
-    projectDescription: "Know the price of digital services in Argentina.",
+    projectDescription:
+      "Que me están cobrando backend that scrapes the services websites and takes their prices.",
     technologies: ["puppeteer", "prisma", "docker", "node"],
     imageSrc: "que-me-cobran.webp",
     demoLink: "https://que-me-estan-cobrando-v2.vercel.app/",
@@ -20,7 +22,7 @@ export const projects: Project[] = [
   {
     projectName: "Resident evil games",
     projectDescription:
-      "This is a landing page about some resident evil games.",
+      "Learn about the world of resident evil, the history of each game and character in the franchise.",
     technologies: ["nextjs", "typescript", "gsap", "react"],
     imageSrc: "resident-evil.webp",
     demoLink: "https://resident-evil-games.vercel.app/",
