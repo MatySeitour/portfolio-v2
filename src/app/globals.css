@@ -70,7 +70,7 @@ body {
 }
 
 .banner {
-  background: linear-gradient(180deg, #a0f7, #a0f7, #a0f7, #a0f6);
+  background: linear-gradient(180deg, #a0f2, #a0f4, #a0f4, #a0f2);
   filter: blur(100px);
 }
 
@@ -170,21 +170,21 @@ body {
 .radiant-projects {
   background: conic-gradient(
     from 220deg at 50% 50%,
-    #222 0deg,
-    #333a 30deg,
-    #555a 49deg,
-    #777a 70deg,
-    #999a 80deg,
-    #999a 170deg,
-    #a0f7 173deg,
-    #a0fa 183deg,
-    #a0ff 193deg,
-    #fffa 199deg,
-    #999a 200deg,
-    #999a 210deg,
-    #777a 229deg,
-    #555a 239deg,
-    #222 249deg,
+    #333a 0deg,
+    #999 10deg,
+    #9997 20deg,
+    #333a 70deg,
+    #333a 80deg,
+    #333a 170deg,
+    #9997 173deg,
+    #999 183deg,
+    #9997 193deg,
+    #222a 199deg,
+    #222a 200deg,
+    #222a 210deg,
+    #222a 229deg,
+    #222a 239deg,
+    #222a 249deg,
     #333a 259deg
   );
 }
