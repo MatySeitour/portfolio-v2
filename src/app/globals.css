@@ -259,6 +259,17 @@ body {
   animation: rotateRight 3s ease infinite reverse;
 }
 
+.radiant-lines__br {
+  background: conic-gradient(
+    #fff,
+    #a0f 3%,
+    #a0f 6%,
+    #a0f7 10%,
+    transparent 12.9%
+  );
+  animation: rotateRight 3s ease infinite reverse;
+}
+
 .radiant-lines__right {
   background: conic-gradient(
     from 220deg,
