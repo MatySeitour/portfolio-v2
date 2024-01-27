@@ -21,7 +21,6 @@ export default function Home() {
         <Banner />
         <Divider />
         <Experience />
-        <Divider />
         <Projects />
         <Divider />
         <Skills />
