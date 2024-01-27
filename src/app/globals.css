@@ -282,6 +282,18 @@ body {
   );
   animation: rotateLeft 3s ease infinite;
 }
+.radiant-lines__experience {
+  background: conic-gradient(
+    from 220deg,
+    transparent,
+    #333 3%,
+    #333 6%,
+    #333 10%,
+    #333 14.9%,
+    transparent 17.9%
+  );
+  /* animation: rotateLeft 3s ease infinite; */
+}
 
 @keyframes rotateRight {
   0% {
