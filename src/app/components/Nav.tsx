@@ -7,7 +7,7 @@ export default function Nav() {
   return (
     <motion.nav className="fixed top-4 z-50 h-14 w-full md:h-14">
       <div className={`flex h-full w-auto justify-center ${inter.className}`}>
-        <ul className="relative flex gap-4 rounded-full bg-[#000a] bg-gradient-project px-4 py-1 backdrop-blur-sm md:px-2">
+        <ul className="relative flex gap-4 rounded-lg bg-[#000a] bg-gradient-project px-4 py-1 backdrop-blur-sm md:px-2">
           <li className="relative z-10 flex cursor-pointer items-center rounded-full px-1 text-white/70 transition-all hover:text-white md:px-3">
             Home
           </li>
