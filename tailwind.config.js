@@ -29,7 +29,7 @@ module.exports = {
         "gradient-title": "linear-gradient(to bottom, #ddd 30%, #fff 60%, #444);",
         "gradient-icon": "linear-gradient(var(--tw-gradient-stops) 30%, var(--tw-gradient-stops));",
         "gradient-button": "linear-gradient(45deg, #222, transparent);",
-        "gradient-project": "linear-gradient(0deg, #222, transparent, #000, #000);",
+        "gradient-bottom": "linear-gradient(0deg, var(--tw-gradient-stops), transparent, #000, #000);",
         "gradient-blue": "linear-gradient(0deg, #02f5 , transparent, transparent);",
         "gradient-purple": "linear-gradient(0deg, #a0f5 , transparent, transparent);",
         "gradient-orange": "linear-gradient(0deg, #f848 , transparent, transparent);",
