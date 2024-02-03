@@ -6,9 +6,9 @@ export default function ThecnologyProject({
   technologyName: string;
 }) {
   return (
-    <div className="flex h-9 w-auto items-center justify-center gap-1 rounded-md border border-white/20 px-1 pr-2">
+    <div className="flex h-9 w-auto items-center justify-center gap-1 rounded-md border border-gray-500 px-1 pr-2">
       <Image
-        alt="lala"
+        alt={technologyName}
         src={`/${technologyName}.svg`}
         width={500}
         height={500}
