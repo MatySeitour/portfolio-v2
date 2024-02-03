@@ -5,9 +5,6 @@ import ContactBanner from "./ContactBanner";
 import IluminationEffect from "./IluminationEffect";
 import { motion } from "framer-motion";
 
-// hooks ----------------
-import { useEffect, useState } from "react";
-
 // fonts ----------------
 import { inter } from "../assets/fonts";
 
@@ -15,48 +12,12 @@ import { inter } from "../assets/fonts";
 import {
   bannerContainerAnimation,
   borderEffect,
+  contactItemsAnimation,
   subtitleBannerAnimation,
   titleBannerAnimation,
 } from "../utils/animations/animations";
 
-// icons ----------------
-import { FaCopy } from "react-icons/fa";
-import { FaCheck } from "react-icons/fa6";
-
 export default function Banner() {
-  const [copyEmailState, setCopyEmailState] = useState(false);
-
-  useEffect(() => {
-    console.log(window.innerWidth);
-    if (window.innerWidth > 768) {
-      const cursor = document.querySelector(".cursor");
-      document.addEventListener("mousemove", function (e: any) {
-        const posX = e.clientX;
-        const posY = e.clientY;
-        cursor?.animate(
-          {
-            left: `${posX}px`,
-            top: `${posY}px`,
-          },
-          {
-            duration: 500,
-            fill: "forwards",
-          },
-        );
-      });
-    }
-  }, []);
-
-  const handleClick = () => {
-    if (copyEmailState) return;
-    setCopyEmailState(true);
-    navigator.clipboard.writeText("matias.seitour01@gmail.com");
-    console.log("entra");
-    setTimeout(() => {
-      setCopyEmailState(false);
-    }, 1000);
-  };
-
   return (
     <motion.div
       initial="hidden"
@@ -96,38 +57,86 @@ export default function Banner() {
 
         <ContactBanner />
         <motion.div
-          variants={subtitleBannerAnimation}
-          className="flex flex-col items-center gap-4 md:flex-row"
+          initial="hidden"
+          animate="visible"
+          variants={bannerContainerAnimation}
+          className="flex justify-center gap-4 md:justify-start"
         >
-          <div className="relative hidden rounded-lg bg-gradient-project px-4 py-2 text-white md:inline-block">
-            <p className="">matias.seitour01@gmail.com</p>
-            <div className="border-effect__bottom absolute bottom-[0px] right-1/2 h-[2px] w-full translate-x-1/2"></div>
-            <div className="effect-radiant radiant-gray"></div>
-          </div>
-          <div
-            onClick={handleClick}
-            className="relative z-30 cursor-pointer rounded-lg bg-gradient-button px-4 py-[8.5px] text-white"
+          <motion.div
+            variants={contactItemsAnimation}
+            className="flex h-auto w-auto cursor-pointer gap-4"
           >
-            <FaCopy
-              className={`absolute z-10 hidden h-6 w-6 md:inline-block ${
-                copyEmailState ? `opacity-0` : `opacity-100`
-              } transition-all`}
-            />
-            <p
-              className={`inline-block md:hidden ${
-                copyEmailState ? `opacity-0` : `opacity-100`
-              } transition-all`}
+            <motion.div
+              initial={{
+                backgroundImage:
+                  "linear-gradient(45deg, #222 30%,  #a0f0, transparent, #000)",
+              }}
+              whileHover={{
+                backgroundImage:
+                  "linear-gradient(45deg, #a0fa 30%,  #a0f5, transparent,#000)",
+                transition: {
+                  duration: 0.5,
+                  type: "spring",
+                },
+              }}
+              className="relative z-30 rounded-lg bg-black px-4 py-3 text-white md:inline-block"
             >
-              Copy email
-            </p>
-            <FaCheck
-              onClick={handleClick}
-              className={`absolute left-1/2 top-1/2 z-10 h-6 w-6 -translate-x-1/2 -translate-y-1/2 md:relative md:left-0 md:translate-x-0 md:translate-y-0 ${
-                !copyEmailState ? `opacity-0` : `opacity-100`
-              } text-green-600 transition-all`}
-            />
-            <div className="effect-radiant radiant-gray"></div>
-          </div>
+              <p className="">Download CV</p>
+              <motion.div
+                initial={{
+                  backgroundImage:
+                    "conic-gradient(from 220deg at 50% 50%,transparent 0deg,#333 186deg,#777 203deg,#333 217deg,#111 230deg,transparent 260deg)",
+                }}
+                whileHover={{
+                  backgroundImage:
+                    "conic-gradient(from 220deg at 50% 50%,transparent 0deg,#333 186deg,#a0ff 203deg,#a0ff 217deg,#111 230deg,transparent 260deg)",
+                  transition: {
+                    duration: 0.5,
+                    type: "spring",
+                  },
+                }}
+                className="effect-radiant"
+              ></motion.div>
+            </motion.div>
+          </motion.div>
+
+          <motion.div
+            variants={contactItemsAnimation}
+            className="flex h-auto w-auto cursor-pointer gap-4"
+          >
+            <motion.div
+              initial={{
+                backgroundImage:
+                  "linear-gradient(45deg, #222 30%,  #a0f0 40%, transparent, #000)",
+              }}
+              whileHover={{
+                backgroundImage:
+                  "linear-gradient(45deg, #a0fa 30%,  #a0f5 40%, transparent,#000)",
+                transition: {
+                  duration: 0.5,
+                  type: "spring",
+                },
+              }}
+              className="relative z-30 rounded-lg bg-black px-4 py-3 text-white md:inline-block"
+            >
+              <p className="">Open CV</p>
+              <motion.div
+                initial={{
+                  backgroundImage:
+                    "conic-gradient(from 220deg at 50% 50%,transparent 0deg,#333 186deg,#777 203deg,#333 217deg,#111 230deg,transparent 260deg)",
+                }}
+                whileHover={{
+                  backgroundImage:
+                    "conic-gradient(from 220deg at 50% 50%,transparent 0deg,#333 186deg,#a0ff 203deg,#a0ff 217deg,#111 230deg,transparent 260deg)",
+                  transition: {
+                    duration: 0.5,
+                    type: "spring",
+                  },
+                }}
+                className="effect-radiant"
+              ></motion.div>
+            </motion.div>
+          </motion.div>
         </motion.div>
       </motion.div>
       <motion.div
