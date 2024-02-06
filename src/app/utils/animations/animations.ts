@@ -15,6 +15,25 @@ export const borderEffect = {
     },
   },
 };
+
+export const experienceLines = {
+  hidden: {
+    background:
+      "conic-gradient(from -0deg,transparent 20%,#fff 20.5%,#a0f 21%,#a0f7 25%,transparent 26%)",
+    rotate: "-0deg",
+    transition: {},
+  },
+  visible: {
+    background:
+      "conic-gradient(from -0deg,transparent 20%,#fff 20.5%,#a0f 21%,#a0f7 25%,transparent 26%)",
+    rotate: "-360deg",
+    transition: {
+      duration: 5,
+      repeat: Infinity,
+    },
+  },
+};
+
 export const projectAnimationContainer = {
   offscreen: {
     backgroundImage: "linear-gradient(0deg, #2220, #2220, #2220,#0000, #0000)",
@@ -63,11 +82,21 @@ export const bannerContainerAnimation = {
 };
 
 export const contactContainer = {
+  hidden: {},
   visible: {
     transition: {
-      ease: [0, 0.71, 0.2, 1.01],
       staggerChildren: 0.2,
       duration: 0.5,
+    },
+  },
+};
+export const experienceLineContainer = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.5,
+      duration: 5,
+      repeat: Infinity,
     },
   },
 };
