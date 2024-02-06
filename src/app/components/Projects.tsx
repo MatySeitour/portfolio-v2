@@ -17,21 +17,25 @@ export default function Projects() {
       whileInView="onscreen"
       variants={containerObserverAnimation}
       viewport={{ once: true, amount: 0.2 }}
-      className="relative flex h-auto w-full flex-col pt-40 "
+      className="relative flex h-auto w-full flex-col pt-20 "
     >
       <div className="flex w-full justify-center">
-        <motion.div variants={appear} className="relative z-10 flex gap-2">
-          <h3 className="mr-1 inline-block bg-gradient-title bg-clip-text text-6xl font-semibold text-transparent">
+        <div className="relative z-10 flex gap-2">
+          <motion.h3
+            variants={appear}
+            className=" inline-block bg-gradient-title bg-clip-text text-center text-5xl font-semibold text-transparent md:text-6xl"
+          >
             Some of
-          </h3>
-          <p className="subtitle-name inline-block pb-1 text-6xl font-semibold">
-            {"  "}
-            my projects
-          </p>
-        </motion.div>
+            <br />
+            <b className="subtitle-name inline-block pb-1 text-5xl font-semibold md:text-6xl">
+              {"  "}
+              my projects
+            </b>
+          </motion.h3>
+        </div>
       </div>
       <div className="relative h-auto w-full px-2 pt-20">
-        <ul className="grid h-full w-full grid-cols-2 place-items-center gap-10 pb-8">
+        <ul className="grid h-full w-full place-items-center gap-10 pb-8 lg:grid-cols-2">
           {projects.map((project) => (
             <ProjectCard key={project.projectName} projectData={project} />
           ))}
