@@ -282,22 +282,74 @@ body {
   );
   animation: rotateLeft 3s ease infinite;
 }
+.radiant-lines__right__mobile {
+  background: conic-gradient(
+    from 50deg,
+    #fff,
+    #a0f 3%,
+    #a0f 6%,
+    #a0f7 10%,
+    transparent 12.9%
+  );
+  animation: rotateRightMobile 3s ease infinite reverse;
+}
+.radiant-lines__bottom {
+  background: conic-gradient(
+    #fff,
+    #a0f 3%,
+    #a0f 6%,
+    #a0f7 10%,
+    transparent 12.9%
+  );
+  animation: rotateBottom 5s linear infinite reverse;
+}
+
+.bg-bottom-transparent {
+  background-image: linear-gradient(to bottom, #444 80%, transparent);
+}
+
 .radiant-lines__experience {
   background: conic-gradient(
-    from 220deg,
-    transparent,
-    #333 3%,
-    #333 6%,
-    #333 10%,
-    #333 14.9%,
-    transparent 17.9%
+    from 190deg,
+    transparent 20%,
+    #fff 20.5%,
+    #a0f 21%,
+    #a0f7 25%,
+    #333 26%
   );
-  /* animation: rotateLeft 3s ease infinite; */
+  animation: rotateExperience 3s ease infinite reverse;
+}
+
+@keyframes rotateExperience {
+  0% {
+    transform: rotate(190deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateBottom {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes rotateRight {
   0% {
-    transform: rotate(0);
+    transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
@@ -307,6 +359,14 @@ body {
 @keyframes rotateLeft {
   0% {
     transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateRightMobile {
+  0% {
+    transform: rotate(50deg);
   }
   100% {
     transform: rotate(360deg);
