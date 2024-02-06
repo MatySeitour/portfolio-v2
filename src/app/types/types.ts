@@ -11,7 +11,7 @@ export interface Project {
   projectDescription: string;
   technologies: Array<string>;
   imageSrc: string;
-  demoLink?: string;
+  demoLink: string;
   githubLink: string;
 }
 
