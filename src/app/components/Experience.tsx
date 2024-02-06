@@ -49,28 +49,31 @@ export default function Experience() {
               </div>
               <motion.h3
                 variants={appear}
-                className="inline-block bg-gradient-title bg-clip-text text-4xl font-semibold text-transparent md:text-6xl"
+                className="inline-block bg-gradient-title bg-clip-text text-4xl font-semibold text-transparent sm:text-5xl md:text-6xl"
               >
                 A little bit{"  "}
                 <br />
-                <b className="subtitle-name inline-block pb-1 text-4xl font-semibold md:text-6xl">
+                <b className="subtitle-name inline-block pb-1 text-4xl font-semibold sm:text-5xl md:text-6xl">
                   my experience
                 </b>
               </motion.h3>
               <div className="relative h-full w-full max-w-[120px]">
                 <div className="absolute left-7 top-1/2 z-20 h-full max-h-[120px] w-full rounded-tr-md border-r border-t border-white/5">
                   <div className="lines-right bg-gradient-to-t from-transparent to-white/20">
-                    <div className="radiant-lines__right absolute -left-32 -top-32 h-96 w-96"></div>
+                    <div className="radiant-lines__right absolute -left-32 -top-32 hidden h-52 w-96 sm:inline-block sm:h-96"></div>
+                    <div className="radiant-lines__right__mobile absolute -left-32 -top-32 h-52 w-96 sm:hidden sm:h-96"></div>
                   </div>
                 </div>
                 <div className="absolute left-4 top-1/2 z-20 h-full max-h-[110px] w-full translate-y-3 rounded-tr-md border-r border-t border-white/5">
                   <div className="lines-right bg-gradient-to-t from-transparent to-white/20">
-                    <div className="radiant-lines__right absolute -left-32 -top-32 h-96 w-96"></div>
+                    <div className="radiant-lines__right absolute -left-32 -top-32 hidden h-52 w-96 sm:inline-block sm:h-96"></div>
+                    <div className="radiant-lines__right__mobile absolute -left-32 -top-32 h-52 w-96 sm:hidden sm:h-96"></div>
                   </div>
                 </div>
                 <div className="absolute left-1 top-1/2 z-20 h-full max-h-[100px] w-full translate-y-6 rounded-tr-md border-r border-t border-white/5">
                   <div className="lines-right bg-gradient-to-t from-transparent to-white/20">
-                    <div className="radiant-lines__right absolute -left-32 -top-32 h-96 w-96"></div>
+                    <div className="radiant-lines__right absolute -left-32 -top-32 hidden h-52 w-96 sm:inline-block sm:h-96"></div>
+                    <div className="radiant-lines__right__mobile absolute -left-32 -top-32 h-52 w-96 sm:hidden sm:h-96"></div>
                   </div>
                 </div>
               </div>
