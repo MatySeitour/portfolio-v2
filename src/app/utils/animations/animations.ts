@@ -16,6 +16,19 @@ export const borderEffect = {
   },
 };
 
+export const iluminationHoverEffect = {
+  rest: {
+    transform: "translateX(0px)",
+    transition: {},
+  },
+  hover: {
+    transform: "translateX(100px)",
+    transition: {
+      duration: 0.3,
+    },
+  },
+};
+
 export const experienceLines = {
   hidden: {
     background:
