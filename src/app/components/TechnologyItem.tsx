@@ -15,12 +15,12 @@ export default function TechnologyItem({
 }) {
   return (
     <div
-      className={`absolute z-10 flex h-20 flex-col items-center justify-center rounded-[50%] ${
+      className={`absolute z-10 flex h-16 flex-col items-center justify-center rounded-[50%] md:h-20 ${
         className && className
       }`}
     >
       <div
-        className={`bg-gradient-to-45  ${gradientColor} relative h-14 w-14 rounded-[50%] bg-black p-[10px]`}
+        className={`bg-gradient-to-45  ${gradientColor} relative h-12 w-12 rounded-[50%] bg-black p-[10px] md:h-14 md:w-14`}
       >
         <Image
           src={`/${svgImage}`}
