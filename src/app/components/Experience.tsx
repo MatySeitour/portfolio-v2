@@ -47,16 +47,17 @@ export default function Experience() {
                   </div>
                 </div>
               </div>
-              <motion.h3
+              <motion.div
                 variants={appear}
-                className="inline-block bg-gradient-title bg-clip-text text-4xl font-semibold text-transparent sm:text-5xl md:text-6xl"
+                className="inline-block  text-4xl font-semibold sm:text-5xl md:text-6xl"
               >
-                A little bit{"  "}
-                <br />
+                <h3 className="bg-gradient-title bg-clip-text text-transparent">
+                  A little bit{"  "}
+                </h3>
                 <b className="subtitle-name inline-block pb-1 text-4xl font-semibold sm:text-5xl md:text-6xl">
                   my experience
                 </b>
-              </motion.h3>
+              </motion.div>
               <div className="relative h-full w-full max-w-[120px]">
                 <div className="absolute left-7 top-1/2 z-20 h-full max-h-[120px] w-full rounded-tr-md border-r border-t border-white/5">
                   <div className="lines-right bg-gradient-to-t from-transparent to-white/20">
