@@ -18,10 +18,19 @@ module.exports = {
           "100%": {
             boxShadow: "0 0 0 20px rgba(255, 82, 82, 0)",
           }
+        },
+        iluminateEffect: {
+          "0%": {
+            transform: "translateX(0)"
+          },
+          "100%": {
+            transform: "translateX(150px)"
+          }
         }
       },
       animation: {
-        "pulseHover": "pulseHover 1.5s ease infinite"
+        "pulseHover": "pulseHover 1.5s ease infinite",
+        "iluminateEffect": "iluminateEffect .3s linear",
       },
       backgroundImage: {
         "argentina": "linear-gradient(to top, #0ff, #fff, #0ff)",
