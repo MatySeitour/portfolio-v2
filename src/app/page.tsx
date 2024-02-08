@@ -22,7 +22,6 @@ export default function Home() {
         <Divider />
         <Experience />
         <Projects />
-        <Divider />
         <Skills />
       </div>
       <div className="cursor"></div>
