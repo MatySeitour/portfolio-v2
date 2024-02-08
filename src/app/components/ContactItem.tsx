@@ -29,6 +29,7 @@ export default function ContactItem(contactProps: Contact) {
             type: "spring",
           },
         }}
+        aria-label="contact"
         className="relative flex min-w-[5rem] cursor-pointer justify-center rounded-2xl bg-black bg-gradient-button px-4 py-2 transition-all before:p-[0.6px]"
       >
         <contactProps.image className="h-8 w-8 text-white"></contactProps.image>
