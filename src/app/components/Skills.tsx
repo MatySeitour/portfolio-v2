@@ -29,17 +29,18 @@ export default function Skills() {
 
         <div className="relative z-10 flex w-full justify-center">
           <div className="relative">
-            <motion.h3
+            <motion.div
               variants={appear}
-              className="gap-2 bg-gradient-title bg-clip-text text-center text-5xl font-semibold text-transparent sm:text-5xl md:flex md:text-6xl"
+              className="gap-2 text-center text-5xl font-semibold text-transparent sm:text-5xl md:flex md:text-6xl"
             >
-              Some of
-              <br className="md:hidden" />
+              <h3 className="bg-gradient-title bg-clip-text text-transparent">
+                Some of
+              </h3>
               <b className="subtitle-name inline-block pb-1 text-5xl font-semibold sm:text-5xl md:text-6xl">
                 {"  "}
                 my skills
               </b>
-            </motion.h3>
+            </motion.div>
             {/* <div className="absolute -left-4 top-2 z-20 h-[72px] w-56">
               <div className="lines-left bg-gradient-to-b from-transparent !pb-[1.8px] !pl-0 !pr-[0px]">
                 <motion.div
