@@ -19,7 +19,7 @@ import IluminationEffect from "./IluminationEffect";
 
 export default function Experience() {
   return (
-    <motion.section className="relative flex h-auto w-full flex-col px-10 pb-20 pt-40">
+    <motion.section className="relative flex h-auto w-full flex-col px-10 pt-40">
       <motion.div
         className="flex h-auto w-full px-4"
         initial="offscreen"
