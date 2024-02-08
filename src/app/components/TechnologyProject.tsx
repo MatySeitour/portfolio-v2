@@ -6,7 +6,7 @@ export default function ThecnologyProject({
   technologyName: string;
 }) {
   return (
-    <div className="flex h-9 w-auto items-center justify-center gap-1 rounded-md border border-gray-500 px-1 pr-2">
+    <li className="flex h-9 w-auto items-center justify-center gap-1 rounded-md border border-gray-500 px-1 pr-2">
       <Image
         alt={technologyName}
         src={`/${technologyName}.svg`}
@@ -15,6 +15,6 @@ export default function ThecnologyProject({
         className="h-6 w-6"
       />
       <p className="text-white">{technologyName}</p>
-    </div>
+    </li>
   );
 }
