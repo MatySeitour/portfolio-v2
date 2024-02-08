@@ -95,6 +95,9 @@ body {
 .shadow-effect__10 {
   filter: blur(15px);
 }
+.shadow-effect__7 {
+  filter: blur(7px);
+}
 
 .cursor {
   position: fixed;
@@ -128,6 +131,16 @@ body {
     #333 176deg,
     #999 193deg,
     #333 217deg
+  );
+}
+.radiant-skills {
+  background: conic-gradient(
+    from 220deg at 50% 50%,
+    transparent 0deg,
+    #a0f5 120deg,
+    #a0ff 153deg,
+    #a0f5 196deg,
+    transparent 217deg
   );
 }
 
@@ -256,7 +269,7 @@ body {
     #a0f7 10%,
     transparent 14.9%
   );
-  animation: rotateRight 3s ease infinite reverse;
+  animation: rotateRight 3s linear infinite reverse;
 }
 
 .radiant-lines__br {
