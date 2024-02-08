@@ -15,7 +15,7 @@ import IluminationEffect from "./IluminationEffect";
 
 export default function ProjectCard({ projectData }: { projectData: Project }) {
   return (
-    <motion.article
+    <motion.li
       variants={containerObserverAnimation}
       viewport={{ once: true, amount: 0.2 }}
       initial="offscreen"
@@ -54,7 +54,7 @@ export default function ProjectCard({ projectData }: { projectData: Project }) {
                 >
                   View demo
                 </Link>
-                <IluminationEffect className="shadow-effect__7 group-hover:animate-iluminateEffect absolute -left-5 top-0 -z-10 h-full w-2 !bg-gradient-to-r !from-white/10 !to-white/10 transition-all" />
+                <IluminationEffect className="shadow-effect__7 absolute -left-5 top-0 -z-10 h-full w-2 !bg-gradient-to-r !from-white/10 !to-white/10 transition-all group-hover:animate-iluminateEffect" />
               </div>
             </div>
 
@@ -86,6 +86,6 @@ export default function ProjectCard({ projectData }: { projectData: Project }) {
         <div className="border-effect__bottom absolute bottom-[0px] right-1/2 h-[1px] w-full translate-x-1/2"></div>
       </motion.div>
       {/* <div className="shadow-effect__10 absolute left-0 top-0 -z-10 h-full w-full bg-gradient-purple-blur opacity-0 transition-all group-hover:opacity-100"></div> */}
-    </motion.article>
+    </motion.li>
   );
 }
