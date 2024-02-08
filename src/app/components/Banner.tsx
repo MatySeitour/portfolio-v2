@@ -38,7 +38,7 @@ export default function Banner() {
           <div className="flex items-center justify-start gap-2 text-center text-lg md:text-left md:text-2xl">
             <motion.h2
               variants={subtitleBannerAnimation}
-              className={`w-auto overflow-hidden ${inter.className} text-banner text-center text-white/40 md:text-left`}
+              className={`w-auto overflow-hidden ${inter.className} text-banner text-center text-white/70 md:text-left`}
             >
               <b className="text-white">FullStack developer</b>
               {" (or so i think) from  "}
