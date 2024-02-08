@@ -46,13 +46,16 @@ export default function ProjectCard({ projectData }: { projectData: Project }) {
               <p className="hidden bg-gradient-title bg-clip-text text-left text-2xl font-semibold text-transparent sm:inline-block">
                 {projectData.projectName}
               </p>
-              <Link
-                target="_blank"
-                href={projectData.demoLink}
-                className="hidden rounded-md bg-white text-black sm:inline-block sm:p-2"
-              >
-                View demo
-              </Link>
+              <div className="group relative hidden overflow-hidden rounded-md border border-white/20 sm:inline-block sm:p-2">
+                <Link
+                  target="_blank"
+                  href={projectData.demoLink}
+                  className="inline-block h-full w-full bg-gradient-title bg-clip-text text-center font-bold text-transparent"
+                >
+                  View demo
+                </Link>
+                <IluminationEffect className="shadow-effect__7 group-hover:animate-iluminateEffect absolute -left-5 top-0 -z-10 h-full w-2 !bg-gradient-to-r !from-white/10 !to-white/10 transition-all" />
+              </div>
             </div>
 
             <p className="text-sm text-gray-100">
