@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function FirstRing() {
   return (
-    <div className="absolute left-1/2 top-1/2 z-50 h-52 w-72 -translate-x-1/2 -translate-y-1/2 rounded-[50%]">
+    <div className="absolute left-1/2 top-1/2 z-50 h-48 w-48 -translate-x-1/2 -translate-y-1/2 rounded-[50%] min-[570px]:h-52 min-[570px]:w-96 min-[570px]:max-w-xs md:h-52 md:w-96">
       <TechnologyItem
         gradientColor="from-html"
         name="html"
