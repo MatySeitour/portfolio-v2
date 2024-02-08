@@ -22,17 +22,18 @@ export default function Projects() {
     >
       <div className="flex w-full justify-center pt-20">
         <div className="relative z-10 flex gap-2">
-          <motion.h3
+          <motion.div
             variants={appear}
-            className=" inline-block bg-gradient-title bg-clip-text text-center text-5xl font-semibold text-transparent md:text-6xl"
+            className=" inline-block text-center text-5xl font-semibold text-transparent md:text-6xl"
           >
-            Some of
-            <br />
+            <h3 className="bg-gradient-title bg-clip-text text-transparent">
+              Some of
+            </h3>
             <b className="subtitle-name inline-block pb-1 text-5xl font-semibold md:text-6xl">
               {"  "}
               my projects
             </b>
-          </motion.h3>
+          </motion.div>
         </div>
       </div>
       <div className="relative h-auto w-full px-2 pt-20">
