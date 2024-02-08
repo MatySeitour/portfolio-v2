@@ -3,11 +3,10 @@ import Banner from "./components/Banner";
 import Nav from "./components/Nav";
 import { inter } from "./assets/fonts";
 import Experience from "./components/Experience";
-import { useEffect } from "react";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import IluminationEffect from "./components/IluminationEffect";
 import Divider from "./components/Divider";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -23,6 +22,7 @@ export default function Home() {
         <Experience />
         <Projects />
         <Skills />
+        <Footer />
       </div>
       <div className="cursor"></div>
     </main>
