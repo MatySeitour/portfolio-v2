@@ -67,7 +67,10 @@ export default function Banner() {
             variants={contactItemsAnimation}
             className="flex h-auto w-auto cursor-pointer gap-4"
           >
-            <motion.div
+            <motion.a
+              about="_target"
+              href="/cv.pdf"
+              download
               initial={{
                 backgroundImage:
                   "linear-gradient(45deg, #222 30%,  #a0f0, transparent, #000)",
@@ -98,14 +101,16 @@ export default function Banner() {
                 }}
                 className="effect-radiant"
               ></motion.div>
-            </motion.div>
+            </motion.a>
           </motion.div>
 
           <motion.div
             variants={contactItemsAnimation}
             className="flex h-auto w-auto cursor-pointer gap-4"
           >
-            <motion.div
+            <motion.a
+              target="_blank"
+              href="/cv.pdf"
               initial={{
                 backgroundImage:
                   "linear-gradient(45deg, #222 30%,  #a0f0 40%, transparent, #000)",
@@ -136,7 +141,7 @@ export default function Banner() {
                 }}
                 className="effect-radiant"
               ></motion.div>
-            </motion.div>
+            </motion.a>
           </motion.div>
         </motion.div>
       </motion.div>
