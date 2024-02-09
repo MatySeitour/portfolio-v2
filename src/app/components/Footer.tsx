@@ -12,16 +12,23 @@ export default function Footer() {
             2024 - Casi todos los derechos reservados.
           </p>
           <div className="order-1 flex gap-4 text-sm text-white md:order-1">
-            <Link aria-label="contact" href="/">
+            <a
+              target="_blank"
+              aria-label="contact"
+              href="https://github.com/MatySeitour"
+            >
               <FaGithub className="h-6 w-6" />
-            </Link>
-            <Link aria-label="contact" href="/">
+            </a>
+            <a
+              target="_blank"
+              aria-label="contact"
+              href="https://www.linkedin.com/in/matias-seitour-1a0118240/"
+            >
               <FaLinkedin className="h-6 w-6" />
-            </Link>
-            <Link aria-label="contact" href="/">
-              {" "}
+            </a>
+            <a target="_blank" aria-label="contact" href="/">
               <IoMail className="h-6 w-6" />
-            </Link>
+            </a>
           </div>
         </div>
         <div className="shadow-effect__10 absolute -top-10 right-1/2 z-0 h-20 w-32 translate-x-1/2 rounded-full bg-gray-400/10"></div>
