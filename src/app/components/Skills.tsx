@@ -11,7 +11,10 @@ import { motion } from "framer-motion";
 
 export default function Skills() {
   return (
-    <section className="relative h-auto w-full px-4 py-2 pb-10 pt-40">
+    <section
+      id="skills"
+      className="relative h-auto w-full px-4 py-2 pb-10 pt-40"
+    >
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
