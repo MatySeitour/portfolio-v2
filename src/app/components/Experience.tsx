@@ -1,13 +1,10 @@
 "use client";
 // components ----------------
 import { motion } from "framer-motion";
-import { SiPlatzi, SiPhp } from "react-icons/si";
-import { FaUniversity } from "react-icons/fa";
 
 // animations ----------------
 import {
   appear,
-  contactContainer,
   containerObserverAnimation,
   experienceLineContainer,
   experienceLines,
@@ -105,7 +102,7 @@ export default function Experience() {
                           <div className="lines-left bg-gradient-to-b from-transparent to-white/20 !pl-[0px]">
                             <motion.div
                               variants={experienceLines}
-                              className="!absolute -left-0 -top-0 z-20 h-full w-[110%]"
+                              className="!absolute -left-0 top-4 z-20 h-full w-52"
                             ></motion.div>
                           </div>
                         </div>
