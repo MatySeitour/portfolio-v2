@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import {
   appear,
-  bannerContainerAnimation,
+  backgroundContactAnimation,
   containerObserverAnimation,
 } from "../utils/animations/animations";
 import ProjectCard from "./ProjectCard";
@@ -125,14 +125,24 @@ export default function Projects() {
               ></motion.div>
             </div>
           </div>
-          <a
+          <motion.a
+            initial={{
+              backgroundImage: "linear-gradient(45deg, #222,  transparent)",
+            }}
+            whileHover={{
+              backgroundImage: backgroundContactAnimation,
+              transition: {
+                duration: 0.5,
+                type: "spring",
+              },
+            }}
             target="_blank"
             className="text-pretty relative z-30 w-44 scale-110 rounded-full bg-black bg-gradient-button px-4 py-2 text-center text-white sm:w-auto"
             href={"/https://github.com/MatySeitour?tab=repositories"}
           >
             See more projects
             <div className="effect-radiant radiant-purple z-10 !rounded-full bg-black !pl-[0.8px]"></div>
-          </a>
+          </motion.a>
         </motion.div>
 
         <div className="relative -right-2 top-0 z-20 h-[130px] w-[112px] -translate-y-1/2 rounded-br-md border-b border-r border-white/5">
