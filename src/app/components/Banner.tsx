@@ -20,6 +20,7 @@ import {
 export default function Banner() {
   return (
     <motion.div
+      id="home"
       initial="hidden"
       animate="visible"
       variants={bannerContainerAnimation}
