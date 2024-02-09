@@ -10,16 +10,16 @@ export default function Nav() {
         <div className="relative flex h-full rounded-lg bg-[#000a] bg-gradient-bottom from-[#333] backdrop-blur-sm md:px-2">
           <ul className="flex gap-4 px-2 py-1">
             <li className="relative z-20 flex cursor-pointer items-center rounded-full px-1 text-white/70 transition-all hover:text-white md:px-3">
-              Home
+              <a href="#home">Home</a>
             </li>
             <li className="relative z-20 flex cursor-pointer items-center rounded-full px-1 text-white/70 transition-all hover:text-white md:px-3">
-              About
+              <a href="#about">About</a>
             </li>
             <li className="relative z-20 flex cursor-pointer items-center rounded-full px-1 text-white/70 transition-all hover:text-white md:px-3">
-              Experience
+              <a href="#projects">Projects</a>
             </li>
             <li className="relative z-20 flex cursor-pointer items-center rounded-full px-1 text-white/70 transition-all hover:text-white md:px-3">
-              Skills
+              <a href="#skills">Skills</a>
             </li>
           </ul>
           <motion.div className="effect-radiant radiant-gray z-10"></motion.div>
