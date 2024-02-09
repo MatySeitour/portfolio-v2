@@ -2,25 +2,26 @@ export const experienceItems = [
   {
     title: "Frontend Developer at DPSoftware",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit Commodi excepturi maxime maiores amet harum earum saepeid odio nesciunt! Eius pariatur ipsum officia estlaudantium culpa labore itaque adipisci animi",
+      "I worked alongside a team of developers and my main function was to develop visually elegant interfaces and provide ideas for the styles that will be used for their creation.",
     year: "2023",
   },
   {
-    title: "Maintenance and development on gta roleplay server",
+    title:
+      "Maintenance and development on gta roleplay server as fivem developer",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit Commodi excepturi maxime maiores amet harum earum saepeid odio nesciunt! Eius pariatur ipsum officia estlaudantium culpa labore itaque adipisci animi",
+      "I was in charge of performing maintenance for a gta roleplay server, in addition to creating new functionalities for said server and interfaces for certain actions that required a HUD.",
     year: "2023",
   },
   {
-    title: "laslda",
+    title: "Freelancer",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit Commodi excepturi maxime maiores amet harum earum saepeid odio nesciunt! Eius pariatur ipsum officia estlaudantium culpa labore itaque adipisci animi",
-    year: "2023",
+      "I worked as a freelancer where I was in charge of creating web pages that my clients sent me, meeting all their needs in a timely manner.",
+    year: "2021 - 2023",
   },
   {
-    title: "Mgta roleplay server",
+    title: "Maintenance on gta roleplay server as fivem developer",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit Commodi excepturi maxime maiores amet harum earum saepeid odio nesciunt! Eius pariatur ipsum officia estlaudantium culpa labore itaque adipisci animi",
-    year: "2023",
+      "I was in charge of maintaining a GTA Roleplay server in Spain, correcting errors and refactoring code to achieve better performance. In addition, I created new functionalities for said server.",
+    year: "2021",
   },
 ];
