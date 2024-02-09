@@ -138,7 +138,7 @@ export default function Projects() {
             }}
             target="_blank"
             className="text-pretty relative z-30 w-44 scale-110 rounded-full bg-black bg-gradient-button px-4 py-2 text-center text-white sm:w-auto"
-            href={"/https://github.com/MatySeitour?tab=repositories"}
+            href={"https://github.com/MatySeitour?tab=repositories"}
           >
             See more projects
             <div className="effect-radiant radiant-purple z-10 !rounded-full bg-black !pl-[0.8px]"></div>
