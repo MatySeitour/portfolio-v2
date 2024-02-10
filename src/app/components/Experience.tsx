@@ -86,23 +86,23 @@ export default function Experience() {
                 <h4 className="flex items-center gap-2 px-2 py-2 pl-4 text-2xl text-white">
                   💼 Experience
                 </h4>
-                <div className="relative h-96 w-full">
+                <div className="relative h-auto w-full">
                   <motion.ul
                     variants={experienceLineContainer}
                     initial={"hidden"}
                     animate={"visible"}
-                    className="scrollbar-none relative z-50 flex h-full w-full flex-col gap-0 overflow-hidden overflow-y-scroll"
+                    className="relative z-50 flex h-full w-full flex-col gap-0"
                   >
                     {experienceItems.map((experience) => (
                       <li
                         key={experience.title}
                         className="relative flex h-auto w-full items-center gap-4 pt-6"
                       >
-                        <div className="!relative -left-0 z-20 h-1/2 w-full max-w-[100px] border-b border-l border-white/5">
-                          <div className="lines-left bg-gradient-to-b from-transparent to-white/20 !pl-[0px]">
+                        <div className="!relative -left-0 top-0 z-20 h-[90%] w-full max-w-[100px] border-l border-t border-white/5">
+                          <div className="lines-left bg-gradient-to-t from-transparent to-white/20 !p-[0px] !pt-[1px]">
                             <motion.div
                               variants={experienceLines}
-                              className="!absolute -left-0 top-4 z-20 h-full w-52"
+                              className="!absolute -left-10 top-0 z-20 h-full w-52"
                             ></motion.div>
                           </div>
                         </div>
@@ -119,7 +119,7 @@ export default function Experience() {
 
                   <div className="absolute !left-0 !top-1/2 z-20 !h-[110%] !w-4 -translate-y-1/2 !rounded-b-none !rounded-r-none !rounded-tl-md border-r-0 border-t !pb-[0px] !pr-[0px]">
                     <div className="lines-left bg-bottom-transparent z-20 !pb-0 !pl-[1px] !pr-0">
-                      <div className="radiant-lines__bottom absolute -left-32 -top-8 z-20 h-[32rem] w-[30rem]"></div>
+                      <div className="radiant-lines__bottom absolute -left-32 -top-8 z-20 h-full w-[30rem]"></div>
                     </div>
                   </div>
                 </div>
