@@ -32,14 +32,15 @@ export const iluminationHoverEffect = {
 export const experienceLines = {
   hidden: {
     background:
-      "conic-gradient(from -0deg,transparent 20%,#fff 20.5%,#a0f 21%,#a0f7 25%,transparent 26%)",
-    rotate: "-0deg",
+      "conic-gradient(from -0deg,transparent 3%,#a0f7 15%,#a0ff 24%,#fff 25%,transparent 26%)",
+    rotate: "0deg",
     transition: {},
   },
   visible: {
     background:
-      "conic-gradient(from -0deg,transparent 20%,#fff 20.5%,#a0f 21%,#a0f7 25%,transparent 26%)",
-    rotate: "-360deg",
+      "conic-gradient(from -0deg,transparent 3%,#a0f7 15%,#a0ff 24%,#fff 25%,transparent 26%)",
+
+    rotate: "360deg",
     transition: {
       duration: 5,
       repeat: Infinity,
