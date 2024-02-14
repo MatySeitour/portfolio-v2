@@ -18,7 +18,7 @@ export default function SecondRing() {
       <TechnologyItem
         gradientColor="from-golang"
         svgImage={"golang.svg"}
-        className="-bottom-10 left-14 -translate-x-1/2 -translate-y-1/2 min-[570px]:left-28 md:-bottom-10 md:left-12 "
+        className="-bottom-10 left-14 -translate-x-1/2 -translate-y-1/2 min-[570px]:left-28 md:-bottom-10 "
         name="golang"
       />
       <TechnologyItem
