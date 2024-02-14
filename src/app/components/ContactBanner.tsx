@@ -9,6 +9,7 @@ import { contactItems } from "../utils/contact";
 
 // animations ----------------
 import {
+  backgroundContactAnimation,
   contactContainer,
   subtitleBannerAnimation,
 } from "../utils/animations/animations";
@@ -76,7 +77,17 @@ export default function ContactBanner() {
           <div className="border-effect__bottom absolute bottom-[0px] right-1/2 h-[2px] w-full translate-x-1/2"></div>
           <div className="effect-radiant radiant-gray"></div>
         </div>
-        <div
+        <motion.div
+          initial={{
+            backgroundImage: "linear-gradient(45deg, #222,  transparent)",
+          }}
+          whileHover={{
+            backgroundImage: backgroundContactAnimation,
+            transition: {
+              duration: 0.5,
+              type: "spring",
+            },
+          }}
           onClick={handleClick}
           className="relative z-30 cursor-pointer rounded-lg bg-gradient-button px-4 py-3 text-white"
         >
@@ -99,7 +110,7 @@ export default function ContactBanner() {
             } text-green-600 transition-all`}
           />
           <div className="effect-radiant radiant-gray"></div>
-        </div>
+        </motion.div>
       </motion.div>
     </div>
   );
