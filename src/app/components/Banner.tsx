@@ -145,15 +145,10 @@ export default function Banner() {
           </motion.div>
         </motion.div>
       </motion.div>
-      <motion.div
-        initial="rest"
-        whileHover="hover"
-        animate="rest"
-        className="group-data relative h-72 w-72 rounded-lg bg-black md:h-96 md:w-96 "
-      >
+      <motion.div className="group-data relative z-20 h-72 w-72 rounded-lg bg-black md:h-96 md:w-96 ">
         <motion.div
-          variants={borderEffect}
-          className="effect-radiant"
+          variants={titleBannerAnimation}
+          className="effect-radiant radiant-gray"
         ></motion.div>
       </motion.div>
     </motion.div>
