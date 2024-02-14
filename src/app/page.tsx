@@ -7,6 +7,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Divider from "./components/Divider";
 import Footer from "./components/Footer";
+import IluminationEffect from "./components/IluminationEffect";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       <Nav />
       <div className="fixed top-0 -z-10 h-full w-full bg-[#000a]"></div>
 
-      <div className="w-full max-w-7xl">
+      <div className="w-full max-w-[90rem]">
         <Banner />
         <Divider />
         <Experience />
