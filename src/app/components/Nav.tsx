@@ -5,7 +5,17 @@ import { inter } from "../assets/fonts";
 
 export default function Nav() {
   return (
-    <motion.nav className="fixed top-4 z-50 h-14 w-full md:h-12">
+    <motion.nav
+      initial={{ translateY: -100 }}
+      animate={{
+        translateY: 0,
+        transition: {
+          type: "spring",
+          bounce: 0.4,
+        },
+      }}
+      className="fixed top-4 z-50 h-14 w-full md:h-12"
+    >
       <div className={`flex h-full w-auto justify-center ${inter.className}`}>
         <div className="relative flex h-full rounded-lg bg-[#000a] bg-gradient-bottom from-[#333] backdrop-blur-sm md:px-2">
           <ul className="flex gap-4 px-2 py-1">
