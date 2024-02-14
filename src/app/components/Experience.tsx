@@ -27,7 +27,10 @@ export default function Experience() {
         variants={containerObserverAnimation}
         viewport={{ once: true, amount: 0.2 }}
       >
-        <div className="relative z-10 flex h-auto w-full flex-col justify-center gap-16">
+        <motion.div
+          variants={appear}
+          className="relative z-10 flex h-auto w-full flex-col justify-center gap-16"
+        >
           <div className="flex items-center justify-center text-center">
             <div className="relative flex h-full w-full items-center justify-center gap-2">
               <div className="relative h-full w-full max-w-[120px]">
@@ -47,17 +50,14 @@ export default function Experience() {
                   </div>
                 </div>
               </div>
-              <motion.div
-                variants={appear}
-                className="inline-block  text-4xl font-semibold sm:text-5xl md:text-6xl"
-              >
+              <div className="inline-block  text-4xl font-semibold sm:text-5xl md:text-6xl">
                 <h3 className="bg-gradient-title bg-clip-text text-transparent">
                   A little bit{"  "}
                 </h3>
                 <b className="subtitle-name inline-block pb-1 text-4xl font-semibold sm:text-5xl md:text-6xl">
                   my experience
                 </b>
-              </motion.div>
+              </div>
               <div className="relative h-full w-full max-w-[120px]">
                 <div className="absolute left-7 top-1/2 z-20 h-full max-h-[120px] w-full rounded-tr-md border-r border-t border-white/5">
                   <div className="lines-right bg-gradient-to-t from-transparent to-white/20">
@@ -102,7 +102,7 @@ export default function Experience() {
                           <div className="lines-left bg-gradient-to-t from-transparent to-white/20 !p-[0px] !pt-[1px]">
                             <motion.div
                               variants={experienceLines}
-                              className="!absolute -left-10 top-0 z-20 h-full w-52"
+                              className="!absolute -left-4 -top-4 z-20 h-32 w-52 md:-left-10 md:top-0 md:h-full"
                             ></motion.div>
                           </div>
                         </div>
@@ -161,7 +161,7 @@ export default function Experience() {
               </section>
             </div>
           </div>
-        </div>
+        </motion.div>
       </motion.div>
     </motion.section>
   );
