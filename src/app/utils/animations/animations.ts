@@ -47,6 +47,25 @@ export const experienceLines = {
     },
   },
 };
+export const experienceLinesReverse = {
+  hidden: {
+    background:
+      "conic-gradient(from 40deg,transparent 3%,#fff 4%, #a0ff 5%,#a0f7 14%,#a0f7 25%,transparent 26%)",
+
+    rotate: "40deg",
+    transition: {},
+  },
+  visible: {
+    background:
+      "conic-gradient(from 40deg,transparent 3%,#fff 4%, #a0ff 5%,#a0f7 14%,#a0f7 25%,transparent 26%)",
+
+    rotate: "-300deg",
+    transition: {
+      duration: 5,
+      repeat: Infinity,
+    },
+  },
+};
 
 export const projectAnimationContainer = {
   offscreen: {
@@ -89,7 +108,7 @@ export const bannerContainerAnimation = {
   visible: {
     transition: {
       ease: [0, 0.71, 0.2, 1.01],
-      staggerChildren: 0.2,
+      staggerChildren: 0.1,
       duration: 0.5,
     },
   },
