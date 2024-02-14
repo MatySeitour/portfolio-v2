@@ -59,6 +59,7 @@ module.exports = {
         "docker": "#0afa",
         "golang": "#0cfa",
         "prisma": "#0faf",
+        "php": "#777BB3",
       }
     },
   },
