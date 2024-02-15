@@ -22,7 +22,6 @@ export default function ContactBanner() {
   const [copyEmailState, setCopyEmailState] = useState(false);
 
   useEffect(() => {
-    console.log(window.innerWidth);
     if (window.innerWidth > 768) {
       const cursor = document.querySelector(".cursor");
       document.addEventListener("mousemove", function (e: any) {
@@ -46,7 +45,6 @@ export default function ContactBanner() {
     if (copyEmailState) return;
     setCopyEmailState(true);
     navigator.clipboard.writeText("matias.seitour01@gmail.com");
-    console.log("entra");
     setTimeout(() => {
       setCopyEmailState(false);
     }, 1000);
