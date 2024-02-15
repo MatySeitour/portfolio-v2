@@ -27,7 +27,7 @@ export default function Banner() {
       variants={bannerContainerAnimation}
       className="relative flex h-full flex-col-reverse items-center justify-between gap-8 bg-[#000a] px-8 pt-40 md:flex-row"
     >
-      <IluminationEffect className="absolute -top-1/2 left-1/2 h-[26rem] w-[26rem] -translate-x-1/2  rotate-[200deg] rounded-full" />
+      <IluminationEffect className="absolute left-1/2 top-0 h-[26rem] w-[26rem] -translate-x-1/2 rotate-[200deg]  rounded-full md:-top-1/2" />
 
       <motion.div className="relative flex flex-col gap-8">
         <div className="flex flex-col gap-4">
