@@ -49,16 +49,32 @@ export default function Skills() {
             <SecondRing />
           </div>
           <div className="relative flex flex-col items-center justify-center gap-4">
-            <h5 className="bg-gradient-title bg-clip-text text-2xl font-semibold text-transparent">
+            <p className="bg-gradient-title bg-clip-text text-2xl font-semibold text-transparent">
               I am currently learning
-            </h5>
+            </p>
             <motion.div
               variants={experienceLineContainer}
               initial={"hidden"}
               animate={"visible"}
               className="relative flex h-auto w-auto items-center justify-center"
             >
-              <div className="!relative -left-0 top-0 z-20 h-1 w-32 -translate-y-2 border-l border-t border-white/5">
+              <div className="!relative -left-0 -top-0.5 z-20 h-1 w-32 -translate-y-2 border-l border-t border-white/5 md:top-0">
+                <div className="lines-left bg-gradient-to-t from-transparent to-white/20 !p-[0px] !pt-[1.2px]">
+                  <motion.div
+                    variants={experienceLines}
+                    className="!absolute -left-4 -top-4 z-20 h-32 w-52 md:-left-10 md:top-0 md:h-32"
+                  ></motion.div>
+                </div>
+              </div>
+              <div className="!absolute left-[1.1rem] top-4 z-20 h-1 w-28 -translate-y-2 border-l border-t border-white/5 md:top-8">
+                <div className="lines-left bg-gradient-to-t from-transparent to-white/20 !p-[0px] !pt-[1.2px]">
+                  <motion.div
+                    variants={experienceLines}
+                    className="!absolute -left-4 -top-4 z-20 h-32 w-52 md:-left-10 md:top-0 md:h-32"
+                  ></motion.div>
+                </div>
+              </div>
+              <div className="!absolute left-[1.1rem] top-10 z-20 h-1 w-[7.25rem] -translate-y-2 border-l border-t border-white/5 md:top-[3.8rem]">
                 <div className="lines-left bg-gradient-to-t from-transparent to-white/20 !p-[0px] !pt-[1.2px]">
                   <motion.div
                     variants={experienceLines}
@@ -72,7 +88,23 @@ export default function Skills() {
                 gradientColor="from-php"
                 className="relative object-cover"
               />
-              <div className="!relative -left-0 top-0 z-20 h-1 w-32 -translate-y-2 border-l border-t border-white/5">
+              <div className="!relative -left-0 -top-0.5 z-20 h-1 w-32 -translate-y-2 border-l border-t border-white/5 md:top-0">
+                <div className="lines-left bg-gradient-to-t from-transparent to-white/20 !p-[0px] !pt-[1.2px]">
+                  <motion.div
+                    variants={experienceLinesReverse}
+                    className="!absolute -left-4 -top-0 z-20 h-32 w-52 md:-left-10 md:top-0 md:h-32"
+                  ></motion.div>
+                </div>
+              </div>
+              <div className="!absolute right-[1.1rem] top-4 z-20 h-1 w-28 -translate-y-2 border-l border-t border-white/5 md:top-8">
+                <div className="lines-left bg-gradient-to-t from-transparent to-white/20 !p-[0px] !pt-[1.2px]">
+                  <motion.div
+                    variants={experienceLinesReverse}
+                    className="!absolute -left-4 -top-0 z-20 h-32 w-52 md:-left-10 md:top-0 md:h-32"
+                  ></motion.div>
+                </div>
+              </div>
+              <div className="!absolute right-[1.1rem] top-10 z-20 h-1 w-[7.25rem] -translate-y-2 border-l border-t border-white/5 md:top-[3.8rem]">
                 <div className="lines-left bg-gradient-to-t from-transparent to-white/20 !p-[0px] !pt-[1.2px]">
                   <motion.div
                     variants={experienceLinesReverse}
