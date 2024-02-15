@@ -16,6 +16,7 @@ import {
   subtitleBannerAnimation,
   titleBannerAnimation,
 } from "../utils/animations/animations";
+import Image from "next/image";
 
 export default function Banner() {
   return (
@@ -145,11 +146,18 @@ export default function Banner() {
           </motion.div>
         </motion.div>
       </motion.div>
-      <motion.div className="group-data relative z-20 h-72 w-72 rounded-lg bg-black md:h-96 md:w-96 ">
-        <motion.div
-          variants={titleBannerAnimation}
-          className="effect-radiant radiant-gray"
-        ></motion.div>
+      <motion.div
+        variants={titleBannerAnimation}
+        className="group-data relative z-20 h-72 w-72 rounded-lg bg-black md:h-[25rem] md:w-96"
+      >
+        <Image
+          priority
+          width={899}
+          height={1200}
+          className="h-full w-full rounded-lg object-cover"
+          src={"/me.jpg"}
+          alt="Matias Seitour"
+        />
       </motion.div>
     </motion.div>
   );
