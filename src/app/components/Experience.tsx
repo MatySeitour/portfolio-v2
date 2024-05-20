@@ -98,7 +98,7 @@ export default function Experience() {
                         key={experience.title}
                         className="relative flex h-auto w-full items-center gap-4 pt-6"
                       >
-                        <div className="!relative -left-0 top-0 z-20 h-[90%] w-full max-w-[100px] border-l border-t border-white/5">
+                        <div className="!relative -left-0 top-1 z-20 h-[90%] w-full max-w-[100px] border-l border-t border-white/5">
                           <div className="lines-left bg-gradient-to-t from-transparent to-white/20 !p-[0px] !pt-[1px]">
                             <motion.div
                               variants={experienceLines}
@@ -107,8 +107,8 @@ export default function Experience() {
                           </div>
                         </div>
 
-                        <div className="flex h-auto flex-col gap-4 text-white">
-                          <h5 className="">{experience.title}</h5>
+                        <div className="flex h-auto flex-col gap-1 text-white pb-2">
+                          <h5 className="text-lg font-semibold">{experience.title}</h5>
                           <p className="text-white/40">
                             {experience.description}
                           </p>
