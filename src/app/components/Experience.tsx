@@ -152,6 +152,9 @@ export default function Experience() {
                       </b>{" "}
                       at the University of Moreno, and a Platzi student since
                       2020.
+                      <br/>
+                      <br/>
+                      <b className="text-white">I am currently working in <a className="underline" href="https://www.dpssoftware.com.ar/">DPS Software</a> as a backend developer in PHP.</b> 
                     </p>
                   </div>
                   <div className="border-effect__bottom absolute bottom-[0px] right-1/2 h-[1px] w-full translate-x-1/2"></div>
