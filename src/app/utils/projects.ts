@@ -20,6 +20,14 @@ export const projects: Project[] = [
     githubLink: "https://github.com/MatySeitour/que-me-estan-cobrando",
   },
   {
+    projectName: "Seilop",
+    projectDescription:
+      "Website of an Argentine financial company.",
+    technologies: ["nextjs", "typescript"],
+    imageSrc: "seilop.png",
+    demoLink: "https://www.seilop.com.ar/",
+  },
+  {
     projectName: "Resident evil games",
     projectDescription:
       "Learn about the world of resident evil, the history of each game and character in the franchise.",
