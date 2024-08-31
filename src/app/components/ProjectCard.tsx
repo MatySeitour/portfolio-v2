@@ -18,7 +18,7 @@ export default function ProjectCard({ projectData }: { projectData: Project }) {
       viewport={{ once: true, amount: 0.2 }}
       initial="offscreen"
       whileInView="onscreen"
-      className="flex h-[30rem] w-full justify-center"
+      className="flex h-[30rem] w-[36rem] justify-center"
     >
       <motion.div
         variants={appear}
@@ -74,12 +74,14 @@ export default function ProjectCard({ projectData }: { projectData: Project }) {
             <IluminationEffect className="shadow-effect__30 absolute -left-10 top-14 !-z-0 h-10 w-full -rotate-[27deg] !bg-gradient-to-r !from-white/10 !to-white/10" />
             {/* <IluminationEffect className="absolute -bottom-1/2 left-1/2 !-z-20 h-32 w-32 -translate-x-1/2 !bg-gradient-to-r !from-transparent !to-white" /> */}
           </motion.div>
-          <Link
-            className="absolute bottom-2 right-4 z-40 text-sm text-white underline"
-            href={projectData.githubLink}
-          >
-            View code
-          </Link>
+          {projectData.githubLink !== undefined &&
+            <Link
+              className="absolute bottom-2 right-4 z-40 text-sm text-white underline"
+              href={projectData.githubLink}
+            >
+              View code
+            </Link>
+          }
         </div>
 
         <div className="effect-radiant radiant-projects z-10 !rounded-md !pl-[1.3px] !pr-[1px] !pt-[1.3px]"></div>
