@@ -12,7 +12,7 @@ export interface Project {
   technologies: Array<string>;
   imageSrc: string;
   demoLink: string;
-  githubLink: string;
+  githubLink?: string;
 }
 
 // {
