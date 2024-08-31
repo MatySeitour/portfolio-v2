@@ -38,7 +38,7 @@ export default function Projects() {
         </div>
       </div>
       <div className="relative h-auto w-full px-2 pt-20">
-        <ul className="grid h-full w-full place-items-center gap-10 pb-8 lg:grid-cols-2">
+        <ul className="flex flex-wrap h-full w-full justify-center items-center gap-10 pb-8">
           {projects.map((project) => (
             <ProjectCard key={project.projectName} projectData={project} />
           ))}
