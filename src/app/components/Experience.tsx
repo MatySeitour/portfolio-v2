@@ -148,9 +148,9 @@ export default function Experience() {
                       <br />
                       <br />I am a{" "}
                       <b className="text-white">
-                        business administration student
+                        engineer software student
                       </b>{" "}
-                      at the University of Moreno, and a Platzi student since
+                      at the University Technology National from Arg, and a Platzi student since
                       2020.
                       <br/>
                       <br/>

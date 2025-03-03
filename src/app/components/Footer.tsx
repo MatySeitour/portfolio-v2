@@ -3,13 +3,15 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 
+const year = new Date().getFullYear(); 
+
 export default function Footer() {
   return (
     <footer className="h-40 w-full pt-10 md:h-32">
       <div className="relative h-full w-full overflow-hidden px-10">
         <div className="flex h-full w-full flex-col items-center justify-center gap-6 md:flex-row md:justify-between md:gap-0">
           <p className="order-2 text-sm text-white md:order-1">
-            2024 - Casi todos los derechos reservados.
+            {year} - Casi todos los derechos reservados.
           </p>
           <div className="order-1 flex gap-4 text-sm text-white md:order-1">
             <a
